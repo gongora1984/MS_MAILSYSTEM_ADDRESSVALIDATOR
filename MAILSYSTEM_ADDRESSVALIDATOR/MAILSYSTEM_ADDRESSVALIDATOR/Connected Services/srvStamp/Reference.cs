@@ -7,350 +7,636 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace svcStamp
+namespace srvStamp
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", ConfigurationName="svcStamp.SwsimV135Soap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", ConfigurationName="srvStamp.SwsimV135Soap")]
     public interface SwsimV135Soap
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetRates", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetRatesResponse> GetRatesAsync(svcStamp.GetRatesRequest request);
+        srvStamp.GetRatesResponse GetRates(srvStamp.GetRatesRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetRates", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetRatesResponse> GetRatesAsync(srvStamp.GetRatesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateIndicium", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CreateIndiciumResponse> CreateIndiciumAsync(svcStamp.CreateIndiciumRequest request);
+        srvStamp.CreateIndiciumResponse CreateIndicium(srvStamp.CreateIndiciumRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateIndicium", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CreateIndiciumResponse> CreateIndiciumAsync(srvStamp.CreateIndiciumRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateEnvelopeIndicium", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CreateEnvelopeIndiciumResponse> CreateEnvelopeIndiciumAsync(svcStamp.CreateEnvelopeIndiciumRequest request);
+        srvStamp.CreateEnvelopeIndiciumResponse CreateEnvelopeIndicium(srvStamp.CreateEnvelopeIndiciumRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateEnvelopeIndicium", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CreateEnvelopeIndiciumResponse> CreateEnvelopeIndiciumAsync(srvStamp.CreateEnvelopeIndiciumRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateMailingLabelIndicia" +
             "", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CreateMailingLabelIndiciaResponse> CreateMailingLabelIndiciaAsync(svcStamp.CreateMailingLabelIndiciaRequest request);
+        srvStamp.CreateMailingLabelIndiciaResponse CreateMailingLabelIndicia(srvStamp.CreateMailingLabelIndiciaRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateMailingLabelIndicia" +
+            "", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CreateMailingLabelIndiciaResponse> CreateMailingLabelIndiciaAsync(srvStamp.CreateMailingLabelIndiciaRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateNetStampsIndicia", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CreateNetStampsIndiciaResponse> CreateNetStampsIndiciaAsync(svcStamp.CreateNetStampsIndiciaRequest request);
+        srvStamp.CreateNetStampsIndiciaResponse CreateNetStampsIndicia(srvStamp.CreateNetStampsIndiciaRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateNetStampsIndicia", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CreateNetStampsIndiciaResponse> CreateNetStampsIndiciaAsync(srvStamp.CreateNetStampsIndiciaRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/RegisterAccount", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.RegisterAccountResponse> RegisterAccountAsync(svcStamp.RegisterAccountRequest request);
+        srvStamp.RegisterAccountResponse RegisterAccount(srvStamp.RegisterAccountRequest request);
         
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/RegisterAccount", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.RegisterAccountResponse> RegisterAccountAsync(srvStamp.RegisterAccountRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AddCarrier", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.AddCarrierResponse> AddCarrierAsync(svcStamp.AddCarrierRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.AddCarrierResponse AddCarrier(srvStamp.AddCarrierRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AddCarrier", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.AddCarrierResponse> AddCarrierAsync(srvStamp.AddCarrierRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AddImage", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.AddImageResponse> AddImageAsync(svcStamp.AddImageRequest request);
+        srvStamp.AddImageResponse AddImage(srvStamp.AddImageRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AddImage", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.AddImageResponse> AddImageAsync(srvStamp.AddImageRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AddUserPaymentMethod", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.AddUserPaymentMethodResponse> AddUserPaymentMethodAsync(svcStamp.AddUserPaymentMethodRequest request);
+        srvStamp.AddUserPaymentMethodResponse AddUserPaymentMethod(srvStamp.AddUserPaymentMethodRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AddUserPaymentMethod", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.AddUserPaymentMethodResponse> AddUserPaymentMethodAsync(srvStamp.AddUserPaymentMethodRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AuthenticateBridgeAuthent" +
             "icator", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.AuthenticateBridgeAuthenticatorResponse> AuthenticateBridgeAuthenticatorAsync(svcStamp.AuthenticateBridgeAuthenticatorRequest request);
+        srvStamp.AuthenticateBridgeAuthenticatorResponse AuthenticateBridgeAuthenticator(srvStamp.AuthenticateBridgeAuthenticatorRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AuthenticateBridgeAuthent" +
+            "icator", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.AuthenticateBridgeAuthenticatorResponse> AuthenticateBridgeAuthenticatorAsync(srvStamp.AuthenticateBridgeAuthenticatorRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AuthenticateUser", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.AuthenticateUserResponse> AuthenticateUserAsync(svcStamp.AuthenticateUserRequest request);
+        srvStamp.AuthenticateUserResponse AuthenticateUser(srvStamp.AuthenticateUserRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AuthenticateUser", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.AuthenticateUserResponse> AuthenticateUserAsync(srvStamp.AuthenticateUserRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AuthenticateWithTransferA" +
             "uthenticator", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.AuthenticateWithTransferAuthenticatorResponse> AuthenticateWithTransferAuthenticatorAsync(svcStamp.AuthenticateWithTransferAuthenticatorRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        string AuthenticateWithTransferAuthenticator(System.Guid integrationID, string transferAuthenticator);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/AuthenticateWithTransferA" +
+            "uthenticator", ReplyAction="*")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        System.Threading.Tasks.Task<string> AuthenticateWithTransferAuthenticatorAsync(System.Guid integrationID, string transferAuthenticator);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CancelAccount", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CancelAccountResponse> CancelAccountAsync(svcStamp.CancelAccountRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.CancelAccountResponse CancelAccount(srvStamp.CancelAccountRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CancelAccount", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CancelAccountResponse> CancelAccountAsync(srvStamp.CancelAccountRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CancelCarrierPickup", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CancelCarrierPickupResponse> CancelCarrierPickupAsync(svcStamp.CancelCarrierPickupRequest request);
+        srvStamp.CancelCarrierPickupResponse CancelCarrierPickup(srvStamp.CancelCarrierPickupRequest request);
         
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CancelCarrierPickup", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CancelCarrierPickupResponse> CancelCarrierPickupAsync(srvStamp.CancelCarrierPickupRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CancelIndicium", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CancelIndiciumResponse> CancelIndiciumAsync(svcStamp.CancelIndiciumRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.CancelIndiciumResponse CancelIndicium(srvStamp.CancelIndiciumRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CancelIndicium", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CancelIndiciumResponse> CancelIndiciumAsync(srvStamp.CancelIndiciumRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ChangeDefaultPaymentMetho" +
             "d", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ChangeDefaultPaymentMethodResponse> ChangeDefaultPaymentMethodAsync(svcStamp.ChangeDefaultPaymentMethodRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.ChangeDefaultPaymentMethodResponse ChangeDefaultPaymentMethod(srvStamp.ChangeDefaultPaymentMethodRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ChangeDefaultPaymentMetho" +
+            "d", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ChangeDefaultPaymentMethodResponse> ChangeDefaultPaymentMethodAsync(srvStamp.ChangeDefaultPaymentMethodRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ChangePassword", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ChangePasswordResponse> ChangePasswordAsync(svcStamp.ChangePasswordRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.ChangePasswordResponse ChangePassword(srvStamp.ChangePasswordRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ChangePassword", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ChangePasswordResponse> ChangePasswordAsync(srvStamp.ChangePasswordRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ChangePlan", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ChangePlanResponse> ChangePlanAsync(svcStamp.ChangePlanRequest request);
+        srvStamp.ChangePlanResponse ChangePlan(srvStamp.ChangePlanRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ChangePlan", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ChangePlanResponse> ChangePlanAsync(srvStamp.ChangePlanRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CheckCarrierPickupAvailab" +
             "ility", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CheckCarrierPickupAvailabilityResponse> CheckCarrierPickupAvailabilityAsync(svcStamp.CheckCarrierPickupAvailabilityRequest request);
+        srvStamp.CheckCarrierPickupAvailabilityResponse CheckCarrierPickupAvailability(srvStamp.CheckCarrierPickupAvailabilityRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CheckCarrierPickupAvailab" +
+            "ility", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CheckCarrierPickupAvailabilityResponse> CheckCarrierPickupAvailabilityAsync(srvStamp.CheckCarrierPickupAvailabilityRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CleanseAddress", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CleanseAddressResponse> CleanseAddressAsync(svcStamp.CleanseAddressRequest request);
+        srvStamp.CleanseAddressResponse CleanseAddress(srvStamp.CleanseAddressRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CleanseAddress", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CleanseAddressResponse> CleanseAddressAsync(srvStamp.CleanseAddressRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateBranding", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CreateBrandingResponse> CreateBrandingAsync(svcStamp.CreateBrandingRequest request);
+        srvStamp.CreateBrandingResponse CreateBranding(srvStamp.CreateBrandingRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateBranding", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CreateBrandingResponse> CreateBrandingAsync(srvStamp.CreateBrandingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateManifest", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CreateManifestResponse> CreateManifestAsync(svcStamp.CreateManifestRequest request);
+        srvStamp.CreateManifestResponse CreateManifest(srvStamp.CreateManifestRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateManifest", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CreateManifestResponse> CreateManifestAsync(srvStamp.CreateManifestRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateNotificationSetting" +
             "", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CreateNotificationSettingResponse> CreateNotificationSettingAsync(svcStamp.CreateNotificationSettingRequest request);
+        srvStamp.CreateNotificationSettingResponse CreateNotificationSetting(srvStamp.CreateNotificationSettingRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateNotificationSetting" +
+            "", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CreateNotificationSettingResponse> CreateNotificationSettingAsync(srvStamp.CreateNotificationSettingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateShipmentNotificatio" +
             "n", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.CreateShipmentNotificationResponse> CreateShipmentNotificationAsync(svcStamp.CreateShipmentNotificationRequest request);
+        srvStamp.CreateShipmentNotificationResponse CreateShipmentNotification(srvStamp.CreateShipmentNotificationRequest request);
         
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/CreateShipmentNotificatio" +
+            "n", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.CreateShipmentNotificationResponse> CreateShipmentNotificationAsync(srvStamp.CreateShipmentNotificationRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteBranding", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.DeleteBrandingResponse> DeleteBrandingAsync(svcStamp.DeleteBrandingRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.DeleteBrandingResponse DeleteBranding(srvStamp.DeleteBrandingRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteBranding", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.DeleteBrandingResponse> DeleteBrandingAsync(srvStamp.DeleteBrandingRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteCarrier", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.DeleteCarrierResponse> DeleteCarrierAsync(svcStamp.DeleteCarrierRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.DeleteCarrierResponse DeleteCarrier(srvStamp.DeleteCarrierRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteCarrier", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.DeleteCarrierResponse> DeleteCarrierAsync(srvStamp.DeleteCarrierRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteImage", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.DeleteImageResponse> DeleteImageAsync(svcStamp.DeleteImageRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.DeleteImageResponse DeleteImage(srvStamp.DeleteImageRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteImage", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.DeleteImageResponse> DeleteImageAsync(srvStamp.DeleteImageRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteNotificationSetting" +
             "", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.DeleteNotificationSettingResponse> DeleteNotificationSettingAsync(svcStamp.DeleteNotificationSettingRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.DeleteNotificationSettingResponse DeleteNotificationSetting(srvStamp.DeleteNotificationSettingRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteNotificationSetting" +
+            "", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.DeleteNotificationSettingResponse> DeleteNotificationSettingAsync(srvStamp.DeleteNotificationSettingRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteUserPaymentMethod", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.DeleteUserPaymentMethodResponse> DeleteUserPaymentMethodAsync(svcStamp.DeleteUserPaymentMethodRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.DeleteUserPaymentMethodResponse DeleteUserPaymentMethod(srvStamp.DeleteUserPaymentMethodRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/DeleteUserPaymentMethod", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.DeleteUserPaymentMethodResponse> DeleteUserPaymentMethodAsync(srvStamp.DeleteUserPaymentMethodRequest request);
+        
+        // CODEGEN: Parameter 'CodeWords' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlArrayItemAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/EnumCodeWordTypes", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.EnumCodeWordTypesResponse> EnumCodeWordTypesAsync(svcStamp.EnumCodeWordTypesRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="CodeWords")]
+        srvStamp.EnumCodeWordTypesResponse EnumCodeWordTypes(srvStamp.EnumCodeWordTypesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/EnumCodeWordTypes", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.EnumCodeWordTypesResponse> EnumCodeWordTypesAsync(srvStamp.EnumCodeWordTypesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/EnumCostCodes", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.EnumCostCodesResponse> EnumCostCodesAsync(svcStamp.EnumCostCodesRequest request);
+        srvStamp.EnumCostCodesResponse EnumCostCodes(srvStamp.EnumCostCodesRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/EnumCostCodes", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.EnumCostCodesResponse> EnumCostCodesAsync(srvStamp.EnumCostCodesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/EnumNetStampsLayouts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.EnumNetStampsLayoutsResponse> EnumNetStampsLayoutsAsync(svcStamp.EnumNetStampsLayoutsRequest request);
+        srvStamp.EnumNetStampsLayoutsResponse EnumNetStampsLayouts(srvStamp.EnumNetStampsLayoutsRequest request);
         
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/EnumNetStampsLayouts", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.EnumNetStampsLayoutsResponse> EnumNetStampsLayoutsAsync(srvStamp.EnumNetStampsLayoutsRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/FinishAccountVerification" +
             "", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.FinishAccountVerificationResponse> FinishAccountVerificationAsync(svcStamp.FinishAccountVerificationRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.FinishAccountVerificationResponse FinishAccountVerification(srvStamp.FinishAccountVerificationRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/FinishAccountVerification" +
+            "", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.FinishAccountVerificationResponse> FinishAccountVerificationAsync(srvStamp.FinishAccountVerificationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/FinishPasswordReset", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.FinishPasswordResetResponse> FinishPasswordResetAsync(svcStamp.FinishPasswordResetRequest request);
+        void FinishPasswordReset(string Username, string TempPassword, string NewPassword, System.Guid IntegrationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/FinishPasswordReset", ReplyAction="*")]
+        System.Threading.Tasks.Task FinishPasswordResetAsync(string Username, string TempPassword, string NewPassword, System.Guid IntegrationId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetAccountInfo", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetAccountInfoResponse> GetAccountInfoAsync(svcStamp.GetAccountInfoRequest request);
+        srvStamp.GetAccountInfoResponse GetAccountInfo(srvStamp.GetAccountInfoRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetAccountInfo", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetAccountInfoResponse> GetAccountInfoAsync(srvStamp.GetAccountInfoRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetBalanceHistory", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetBalanceHistoryResponse> GetBalanceHistoryAsync(svcStamp.GetBalanceHistoryRequest request);
+        srvStamp.GetBalanceHistoryResponse GetBalanceHistory(srvStamp.GetBalanceHistoryRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetBalanceHistory", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetBalanceHistoryResponse> GetBalanceHistoryAsync(srvStamp.GetBalanceHistoryRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetBalanceHistoryByToken", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetBalanceHistoryByTokenResponse> GetBalanceHistoryByTokenAsync(svcStamp.GetBalanceHistoryByTokenRequest request);
+        srvStamp.GetBalanceHistoryByTokenResponse GetBalanceHistoryByToken(srvStamp.GetBalanceHistoryByTokenRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetBalanceHistoryByToken", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetBalanceHistoryByTokenResponse> GetBalanceHistoryByTokenAsync(srvStamp.GetBalanceHistoryByTokenRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetBranding", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetBrandingResponse> GetBrandingAsync(svcStamp.GetBrandingRequest request);
+        srvStamp.GetBrandingResponse GetBranding(srvStamp.GetBrandingRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetBranding", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetBrandingResponse> GetBrandingAsync(srvStamp.GetBrandingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetCarrierPickupList", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetCarrierPickupListResponse> GetCarrierPickupListAsync(svcStamp.GetCarrierPickupListRequest request);
+        srvStamp.GetCarrierPickupListResponse GetCarrierPickupList(srvStamp.GetCarrierPickupListRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetCarrierPickupList", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetCarrierPickupListResponse> GetCarrierPickupListAsync(srvStamp.GetCarrierPickupListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetChangePlanStatus", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetChangePlanStatusResponse> GetChangePlanStatusAsync(svcStamp.GetChangePlanStatusRequest request);
+        srvStamp.GetChangePlanStatusResponse GetChangePlanStatus(srvStamp.GetChangePlanStatusRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetChangePlanStatus", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetChangePlanStatusResponse> GetChangePlanStatusAsync(srvStamp.GetChangePlanStatusRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetCodewordQuestions", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetCodewordQuestionsResponse> GetCodewordQuestionsAsync(svcStamp.GetCodewordQuestionsRequest request);
+        srvStamp.GetCodewordQuestionsResponse GetCodewordQuestions(srvStamp.GetCodewordQuestionsRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetCodewordQuestions", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetCodewordQuestionsResponse> GetCodewordQuestionsAsync(srvStamp.GetCodewordQuestionsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetImageList", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetImageListResponse> GetImageListAsync(svcStamp.GetImageListRequest request);
+        srvStamp.GetImageListResponse GetImageList(srvStamp.GetImageListRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetImageList", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetImageListResponse> GetImageListAsync(srvStamp.GetImageListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetNetStampsImages", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetNetStampsImagesResponse> GetNetStampsImagesAsync(svcStamp.GetNetStampsImagesRequest request);
+        srvStamp.GetNetStampsImagesResponse GetNetStampsImages(srvStamp.GetNetStampsImagesRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetNetStampsImages", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetNetStampsImagesResponse> GetNetStampsImagesAsync(srvStamp.GetNetStampsImagesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetNotificationSettings", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetNotificationSettingsResponse> GetNotificationSettingsAsync(svcStamp.GetNotificationSettingsRequest request);
+        srvStamp.GetNotificationSettingsResponse GetNotificationSettings(srvStamp.GetNotificationSettingsRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetNotificationSettings", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetNotificationSettingsResponse> GetNotificationSettingsAsync(srvStamp.GetNotificationSettingsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetShipmentList", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetShipmentListResponse> GetShipmentListAsync(svcStamp.GetShipmentListRequest request);
+        srvStamp.GetShipmentListResponse GetShipmentList(srvStamp.GetShipmentListRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetShipmentList", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetShipmentListResponse> GetShipmentListAsync(srvStamp.GetShipmentListRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetShipmentListByToken", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetShipmentListByTokenResponse> GetShipmentListByTokenAsync(svcStamp.GetShipmentListByTokenRequest request);
+        srvStamp.GetShipmentListByTokenResponse GetShipmentListByToken(srvStamp.GetShipmentListByTokenRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetShipmentListByToken", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetShipmentListByTokenResponse> GetShipmentListByTokenAsync(srvStamp.GetShipmentListByTokenRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetSupportedCountries", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetSupportedCountriesResponse> GetSupportedCountriesAsync(svcStamp.GetSupportedCountriesRequest request);
+        srvStamp.GetSupportedCountriesResponse GetSupportedCountries(srvStamp.GetSupportedCountriesRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetSupportedCountries", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetSupportedCountriesResponse> GetSupportedCountriesAsync(srvStamp.GetSupportedCountriesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetURL", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.GetURLResponse> GetURLAsync(svcStamp.GetURLRequest request);
+        srvStamp.GetURLResponse GetURL(srvStamp.GetURLRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/GetURL", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.GetURLResponse> GetURLAsync(srvStamp.GetURLRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ListPaymentMethods", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ListPaymentMethodsResponse> ListPaymentMethodsAsync(svcStamp.ListPaymentMethodsRequest request);
+        srvStamp.ListPaymentMethodsResponse ListPaymentMethods(srvStamp.ListPaymentMethodsRequest request);
         
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ListPaymentMethods", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ListPaymentMethodsResponse> ListPaymentMethodsAsync(srvStamp.ListPaymentMethodsRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ModifyBranding", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ModifyBrandingResponse> ModifyBrandingAsync(svcStamp.ModifyBrandingRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.ModifyBrandingResponse ModifyBranding(srvStamp.ModifyBrandingRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ModifyBranding", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ModifyBrandingResponse> ModifyBrandingAsync(srvStamp.ModifyBrandingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ModifyCarrierPickup", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ModifyCarrierPickupResponse> ModifyCarrierPickupAsync(svcStamp.ModifyCarrierPickupRequest request);
+        srvStamp.ModifyCarrierPickupResponse ModifyCarrierPickup(srvStamp.ModifyCarrierPickupRequest request);
         
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ModifyCarrierPickup", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ModifyCarrierPickupResponse> ModifyCarrierPickupAsync(srvStamp.ModifyCarrierPickupRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ModifyNotificationSetting" +
             "", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ModifyNotificationSettingResponse> ModifyNotificationSettingAsync(svcStamp.ModifyNotificationSettingRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.ModifyNotificationSettingResponse ModifyNotificationSetting(srvStamp.ModifyNotificationSettingRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ModifyNotificationSetting" +
+            "", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ModifyNotificationSettingResponse> ModifyNotificationSettingAsync(srvStamp.ModifyNotificationSettingRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/PlaceOrder", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.PlaceOrderResponse> PlaceOrderAsync(svcStamp.PlaceOrderRequest request);
+        srvStamp.PlaceOrderResponse PlaceOrder(srvStamp.PlaceOrderRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/PlaceOrder", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.PlaceOrderResponse> PlaceOrderAsync(srvStamp.PlaceOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/PriceOrder", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.PriceOrderResponse> PriceOrderAsync(svcStamp.PriceOrderRequest request);
+        srvStamp.PriceOrderResponse PriceOrder(srvStamp.PriceOrderRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/PriceOrder", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.PriceOrderResponse> PriceOrderAsync(srvStamp.PriceOrderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/PurchasePostage", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.PurchasePostageResponse> PurchasePostageAsync(svcStamp.PurchasePostageRequest request);
+        srvStamp.PurchasePostageResponse PurchasePostage(srvStamp.PurchasePostageRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/PurchasePostage", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.PurchasePostageResponse> PurchasePostageAsync(srvStamp.PurchasePostageRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/RecoverUsername", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.RecoverUsernameResponse> RecoverUsernameAsync(svcStamp.RecoverUsernameRequest request);
+        void RecoverUsername(string EmailAddress, string Reserved);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/RecoverUsername", ReplyAction="*")]
+        System.Threading.Tasks.Task RecoverUsernameAsync(string EmailAddress, string Reserved);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/RegisterShippingProviderA" +
             "ccount", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.RegisterShippingProviderAccountResponse> RegisterShippingProviderAccountAsync(svcStamp.RegisterShippingProviderAccountRequest1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        string RegisterShippingProviderAccount(srvStamp.RegisterShippingProviderAccountRequest registerShippingProviderAccountRequest);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/RegisterShippingProviderA" +
+            "ccount", ReplyAction="*")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        System.Threading.Tasks.Task<string> RegisterShippingProviderAccountAsync(srvStamp.RegisterShippingProviderAccountRequest registerShippingProviderAccountRequest);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ReprintIndicium", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ReprintIndiciumResponse1> ReprintIndiciumAsync(svcStamp.ReprintIndiciumRequest1 request);
+        srvStamp.ReprintIndiciumResponse ReprintIndicium(srvStamp.ReprintIndiciumRequest indiciumRequest);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ReprintIndicium", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ReprintIndiciumResponse> ReprintIndiciumAsync(srvStamp.ReprintIndiciumRequest indiciumRequest);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ResubmitPurchase", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ResubmitPurchaseResponse> ResubmitPurchaseAsync(svcStamp.ResubmitPurchaseRequest request);
+        srvStamp.ResubmitPurchaseResponse ResubmitPurchase(srvStamp.ResubmitPurchaseRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ResubmitPurchase", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ResubmitPurchaseResponse> ResubmitPurchaseAsync(srvStamp.ResubmitPurchaseRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ScheduleCarrierPickup", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.ScheduleCarrierPickupResponse> ScheduleCarrierPickupAsync(svcStamp.ScheduleCarrierPickupRequest request);
+        srvStamp.ScheduleCarrierPickupResponse ScheduleCarrierPickup(srvStamp.ScheduleCarrierPickupRequest request);
         
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/ScheduleCarrierPickup", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.ScheduleCarrierPickupResponse> ScheduleCarrierPickupAsync(srvStamp.ScheduleCarrierPickupRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/SetAutoBuy", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.SetAutoBuyResponse> SetAutoBuyAsync(svcStamp.SetAutoBuyRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.SetAutoBuyResponse SetAutoBuy(srvStamp.SetAutoBuyRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/SetAutoBuy", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.SetAutoBuyResponse> SetAutoBuyAsync(srvStamp.SetAutoBuyRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/SetCodeWords", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.SetCodeWordsResponse> SetCodeWordsAsync(svcStamp.SetCodeWordsRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.SetCodeWordsResponse SetCodeWords(srvStamp.SetCodeWordsRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/SetCodeWords", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.SetCodeWordsResponse> SetCodeWordsAsync(srvStamp.SetCodeWordsRequest request);
+        
+        // CODEGEN: Parameter 'Item' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/StartAccountVerification", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.StartAccountVerificationResponse> StartAccountVerificationAsync(svcStamp.StartAccountVerificationRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="Authenticator")]
+        srvStamp.StartAccountVerificationResponse StartAccountVerification(srvStamp.StartAccountVerificationRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/StartAccountVerification", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.StartAccountVerificationResponse> StartAccountVerificationAsync(srvStamp.StartAccountVerificationRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/StartPasswordReset", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.StartPasswordResetResponse> StartPasswordResetAsync(svcStamp.StartPasswordResetRequest request);
+        void StartPasswordReset(string Username, string Codeword1, string Codeword2, System.Guid IntegrationId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/StartPasswordReset", ReplyAction="*")]
+        System.Threading.Tasks.Task StartPasswordResetAsync(string Username, string Codeword1, string Codeword2, System.Guid IntegrationId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/TrackShipment", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Capabilities))]
-        System.Threading.Tasks.Task<svcStamp.TrackShipmentResponse> TrackShipmentAsync(svcStamp.TrackShipmentRequest request);
+        srvStamp.TrackShipmentResponse TrackShipment(srvStamp.TrackShipmentRequest request);
+        
+        // CODEGEN: Generating message contract since the operation has multiple return values.
+        [System.ServiceModel.OperationContractAttribute(Action="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135/TrackShipment", ReplyAction="*")]
+        System.Threading.Tasks.Task<srvStamp.TrackShipmentResponse> TrackShipmentAsync(srvStamp.TrackShipmentRequest request);
     }
     
     /// <remarks/>
@@ -17714,17 +18000,17 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.RateV46 Rate;
+        public srvStamp.RateV46 Rate;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.ComponentModel.DefaultValueAttribute(Carrier.All)]
-        public svcStamp.Carrier Carrier;
+        public srvStamp.Carrier Carrier;
         
         public GetRatesRequest()
         {
         }
         
-        public GetRatesRequest(object Item, svcStamp.RateV46 Rate, svcStamp.Carrier Carrier)
+        public GetRatesRequest(object Item, srvStamp.RateV46 Rate, srvStamp.Carrier Carrier)
         {
             this.Item = Item;
             this.Rate = Rate;
@@ -17743,13 +18029,13 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Rate")]
-        public svcStamp.RateV46[] Rates;
+        public srvStamp.RateV46[] Rates;
         
         public GetRatesResponse()
         {
         }
         
-        public GetRatesResponse(string Authenticator, svcStamp.RateV46[] Rates)
+        public GetRatesResponse(string Authenticator, srvStamp.RateV46[] Rates)
         {
             this.Authenticator = Authenticator;
             this.Rates = Rates;
@@ -17807,16 +18093,16 @@ namespace svcStamp
         public string TrackingNumber;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.RateV46 Rate;
+        public srvStamp.RateV46 Rate;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.Address ReturnTo;
+        public srvStamp.Address ReturnTo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
         public string CustomerID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
-        public svcStamp.CustomsV8 Customs;
+        public srvStamp.CustomsV8 Customs;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -17824,15 +18110,15 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=8)]
         [System.ComponentModel.DefaultValueAttribute(PostageMode.Normal)]
-        public svcStamp.PostageMode PostageMode;
+        public srvStamp.PostageMode PostageMode;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
         [System.ComponentModel.DefaultValueAttribute(ImageType.Auto)]
-        public svcStamp.ImageType ImageType;
+        public srvStamp.ImageType ImageType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=10)]
         [System.ComponentModel.DefaultValueAttribute(EltronPrinterDPIType.Default)]
-        public svcStamp.EltronPrinterDPIType EltronPrinterDPIType;
+        public srvStamp.EltronPrinterDPIType EltronPrinterDPIType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=11)]
         [System.ComponentModel.DefaultValueAttribute("")]
@@ -17847,7 +18133,7 @@ namespace svcStamp
         public bool deliveryNotification;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=14)]
-        public svcStamp.ShipmentNotification ShipmentNotification;
+        public srvStamp.ShipmentNotification ShipmentNotification;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=15)]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -17879,10 +18165,10 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=22)]
         [System.ComponentModel.DefaultValueAttribute(NonDeliveryOption.Undefined)]
-        public svcStamp.NonDeliveryOption nonDeliveryOption;
+        public srvStamp.NonDeliveryOption nonDeliveryOption;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=23)]
-        public svcStamp.Address RedirectTo;
+        public srvStamp.Address RedirectTo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=24)]
         [System.ComponentModel.DefaultValueAttribute("")]
@@ -17901,10 +18187,10 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=28)]
         [System.ComponentModel.DefaultValueAttribute(PaperSizeV1.Default)]
-        public svcStamp.PaperSizeV1 PaperSize;
+        public srvStamp.PaperSizeV1 PaperSize;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=29)]
-        public svcStamp.LabelRecipientInfo EmailLabelTo;
+        public srvStamp.LabelRecipientInfo EmailLabelTo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=30)]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -17916,7 +18202,7 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=32)]
         [System.ComponentModel.DefaultValueAttribute(ImageDpi.ImageDpiDefault)]
-        public svcStamp.ImageDpi ImageDpi;
+        public srvStamp.ImageDpi ImageDpi;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=33)]
         public string RateToken;
@@ -17949,18 +18235,18 @@ namespace svcStamp
         public bool ReturnIndiciumData;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=42)]
-        public svcStamp.ExtendedPostageInfoV1 ExtendedPostageInfo;
+        public srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=43)]
         [System.ComponentModel.DefaultValueAttribute(EnclosedServiceType.Unknown)]
-        public svcStamp.EnclosedServiceType EnclosedServiceType;
+        public srvStamp.EnclosedServiceType EnclosedServiceType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=44)]
         [System.ComponentModel.DefaultValueAttribute(EnclosedPackageType.Unknown)]
-        public svcStamp.EnclosedPackageType EnclosedPackageType;
+        public srvStamp.EnclosedPackageType EnclosedPackageType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=45)]
-        public svcStamp.OrderDetails OrderDetails;
+        public srvStamp.OrderDetails OrderDetails;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=46)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -17984,18 +18270,18 @@ namespace svcStamp
                     object Item, 
                     string IntegratorTxID, 
                     string TrackingNumber, 
-                    svcStamp.RateV46 Rate, 
-                    svcStamp.Address ReturnTo, 
+                    srvStamp.RateV46 Rate, 
+                    srvStamp.Address ReturnTo, 
                     string CustomerID, 
-                    svcStamp.CustomsV8 Customs, 
+                    srvStamp.CustomsV8 Customs, 
                     bool SampleOnly, 
-                    svcStamp.PostageMode PostageMode, 
-                    svcStamp.ImageType ImageType, 
-                    svcStamp.EltronPrinterDPIType EltronPrinterDPIType, 
+                    srvStamp.PostageMode PostageMode, 
+                    srvStamp.ImageType ImageType, 
+                    srvStamp.EltronPrinterDPIType EltronPrinterDPIType, 
                     string memo, 
                     int cost_code_id, 
                     bool deliveryNotification, 
-                    svcStamp.ShipmentNotification ShipmentNotification, 
+                    srvStamp.ShipmentNotification ShipmentNotification, 
                     int rotationDegrees, 
                     System.Nullable<int> horizontalOffset, 
                     System.Nullable<int> verticalOffset, 
@@ -18003,17 +18289,17 @@ namespace svcStamp
                     System.Nullable<bool> printMemo, 
                     System.Nullable<bool> printInstructions, 
                     bool requestPostageHash, 
-                    svcStamp.NonDeliveryOption nonDeliveryOption, 
-                    svcStamp.Address RedirectTo, 
+                    srvStamp.NonDeliveryOption nonDeliveryOption, 
+                    srvStamp.Address RedirectTo, 
                     string OutboundTransactionID, 
                     string OriginalPostageHash, 
                     System.Nullable<bool> ReturnImageData, 
                     string InternalTransactionNumber, 
-                    svcStamp.PaperSizeV1 PaperSize, 
-                    svcStamp.LabelRecipientInfo EmailLabelTo, 
+                    srvStamp.PaperSizeV1 PaperSize, 
+                    srvStamp.LabelRecipientInfo EmailLabelTo, 
                     bool PayOnPrint, 
                     System.Nullable<int> ReturnLabelExpirationDays, 
-                    svcStamp.ImageDpi ImageDpi, 
+                    srvStamp.ImageDpi ImageDpi, 
                     string RateToken, 
                     string OrderId, 
                     bool BypassCleanseAddress, 
@@ -18023,10 +18309,10 @@ namespace svcStamp
                     string Reference3, 
                     string Reference4, 
                     bool ReturnIndiciumData, 
-                    svcStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
-                    svcStamp.EnclosedServiceType EnclosedServiceType, 
-                    svcStamp.EnclosedPackageType EnclosedPackageType, 
-                    svcStamp.OrderDetails OrderDetails, 
+                    srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
+                    srvStamp.EnclosedServiceType EnclosedServiceType, 
+                    srvStamp.EnclosedPackageType EnclosedPackageType, 
+                    srvStamp.OrderDetails OrderDetails, 
                     System.Nullable<System.Guid> BrandingId, 
                     System.Nullable<System.Guid> NotificationSettingId, 
                     string GroupCode, 
@@ -18117,7 +18403,7 @@ namespace svcStamp
         public string ReturnTrackingNumber;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
-        public svcStamp.RateV46 Rate;
+        public srvStamp.RateV46 Rate;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=8)]
         public System.Guid StampsTxID;
@@ -18126,7 +18412,7 @@ namespace svcStamp
         public string URL;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=10)]
-        public svcStamp.PostageBalance PostageBalance;
+        public srvStamp.PostageBalance PostageBalance;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=11)]
         public string Mac;
@@ -18138,7 +18424,7 @@ namespace svcStamp
         public byte[][] ImageData;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=14)]
-        public svcStamp.HoldForPickUpFacility HoldForPickUpFacility;
+        public srvStamp.HoldForPickUpFacility HoldForPickUpFacility;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=15)]
         public string FormURL;
@@ -18177,14 +18463,14 @@ namespace svcStamp
                     string BannerText, 
                     string TrailingSuperScript, 
                     string ReturnTrackingNumber, 
-                    svcStamp.RateV46 Rate, 
+                    srvStamp.RateV46 Rate, 
                     System.Guid StampsTxID, 
                     string URL, 
-                    svcStamp.PostageBalance PostageBalance, 
+                    srvStamp.PostageBalance PostageBalance, 
                     string Mac, 
                     string PostageHash, 
                     byte[][] ImageData, 
-                    svcStamp.HoldForPickUpFacility HoldForPickUpFacility, 
+                    srvStamp.HoldForPickUpFacility HoldForPickUpFacility, 
                     string FormURL, 
                     string Reference1, 
                     string Reference2, 
@@ -18254,10 +18540,10 @@ namespace svcStamp
         public string IntegratorTxID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.RateV46 Rate;
+        public srvStamp.RateV46 Rate;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.Address ReturnTo;
+        public srvStamp.Address ReturnTo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -18272,11 +18558,11 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
         [System.ComponentModel.DefaultValueAttribute(CreateIndiciumModeV1.Normal)]
-        public svcStamp.CreateIndiciumModeV1 Mode;
+        public srvStamp.CreateIndiciumModeV1 Mode;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=8)]
         [System.ComponentModel.DefaultValueAttribute(ImageType.Auto)]
-        public svcStamp.ImageType ImageType;
+        public srvStamp.ImageType ImageType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -18325,7 +18611,7 @@ namespace svcStamp
         public bool ReturnIndiciumData;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=22)]
-        public svcStamp.ExtendedPostageInfoV1 ExtendedPostageInfo;
+        public srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=23)]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -18333,7 +18619,7 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=24)]
         [System.ComponentModel.DefaultValueAttribute(ImageDpi.ImageDpiDefault)]
-        public svcStamp.ImageDpi ImageDpi;
+        public srvStamp.ImageDpi ImageDpi;
         
         public CreateEnvelopeIndiciumRequest()
         {
@@ -18342,13 +18628,13 @@ namespace svcStamp
         public CreateEnvelopeIndiciumRequest(
                     object Item, 
                     string IntegratorTxID, 
-                    svcStamp.RateV46 Rate, 
-                    svcStamp.Address ReturnTo, 
+                    srvStamp.RateV46 Rate, 
+                    srvStamp.Address ReturnTo, 
                     System.Nullable<bool> PrintFromAddress, 
                     System.Nullable<bool> PrintToAddress, 
                     string CustomerID, 
-                    svcStamp.CreateIndiciumModeV1 Mode, 
-                    svcStamp.ImageType ImageType, 
+                    srvStamp.CreateIndiciumModeV1 Mode, 
+                    srvStamp.ImageType ImageType, 
                     int CostCodeId, 
                     bool HideFIM, 
                     string RateToken, 
@@ -18362,9 +18648,9 @@ namespace svcStamp
                     string Reference3, 
                     string Reference4, 
                     bool ReturnIndiciumData, 
-                    svcStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
+                    srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
                     bool ReturnImageData, 
-                    svcStamp.ImageDpi ImageDpi)
+                    srvStamp.ImageDpi ImageDpi)
         {
             this.Item = Item;
             this.IntegratorTxID = IntegratorTxID;
@@ -18411,7 +18697,7 @@ namespace svcStamp
         public string TrackingNumber;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.RateV46 Rate;
+        public srvStamp.RateV46 Rate;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
         public System.Guid StampsTxID;
@@ -18420,7 +18706,7 @@ namespace svcStamp
         public string URL;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
-        public svcStamp.PostageBalance PostageBalance;
+        public srvStamp.PostageBalance PostageBalance;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
         public string Mac;
@@ -18451,7 +18737,7 @@ namespace svcStamp
         {
         }
         
-        public CreateEnvelopeIndiciumResponse(string Authenticator, string IntegratorTxID, string TrackingNumber, svcStamp.RateV46 Rate, System.Guid StampsTxID, string URL, svcStamp.PostageBalance PostageBalance, string Mac, string PostageHash, string Reference1, string Reference2, string Reference3, string Reference4, byte[] IndiciumData, byte[][] ImageData)
+        public CreateEnvelopeIndiciumResponse(string Authenticator, string IntegratorTxID, string TrackingNumber, srvStamp.RateV46 Rate, System.Guid StampsTxID, string URL, srvStamp.PostageBalance PostageBalance, string Mac, string PostageHash, string Reference1, string Reference2, string Reference3, string Reference4, byte[] IndiciumData, byte[][] ImageData)
         {
             this.Authenticator = Authenticator;
             this.IntegratorTxID = IntegratorTxID;
@@ -18501,15 +18787,15 @@ namespace svcStamp
         public int StartColumn;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
-        public svcStamp.IndiciumInfoV39[] IndiciumInfo;
+        public srvStamp.IndiciumInfoV39[] IndiciumInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
         [System.ComponentModel.DefaultValueAttribute(CreateIndiciumModeV1.Normal)]
-        public svcStamp.CreateIndiciumModeV1 Mode;
+        public srvStamp.CreateIndiciumModeV1 Mode;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=8)]
         [System.ComponentModel.DefaultValueAttribute(ImageType.Auto)]
-        public svcStamp.ImageType ImageType;
+        public srvStamp.ImageType ImageType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
         public string RateToken;
@@ -18539,7 +18825,7 @@ namespace svcStamp
         public bool ReturnIndiciumData;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=17)]
-        public svcStamp.ExtendedPostageInfoV1 ExtendedPostageInfo;
+        public srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=18)]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -18560,9 +18846,9 @@ namespace svcStamp
                     bool PrintToAddress, 
                     int StartRow, 
                     int StartColumn, 
-                    svcStamp.IndiciumInfoV39[] IndiciumInfo, 
-                    svcStamp.CreateIndiciumModeV1 Mode, 
-                    svcStamp.ImageType ImageType, 
+                    srvStamp.IndiciumInfoV39[] IndiciumInfo, 
+                    srvStamp.CreateIndiciumModeV1 Mode, 
+                    srvStamp.ImageType ImageType, 
                     string RateToken, 
                     string memo, 
                     bool BypassCleanseAddress, 
@@ -18571,7 +18857,7 @@ namespace svcStamp
                     string Reference3, 
                     string Reference4, 
                     bool ReturnIndiciumData, 
-                    svcStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
+                    srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
                     int ImageId, 
                     System.Nullable<bool> PrintFromAddress)
         {
@@ -18617,7 +18903,7 @@ namespace svcStamp
         public string[] ConfirmationNumbers;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.PostageBalance PostageBalance;
+        public srvStamp.PostageBalance PostageBalance;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
         public int IssuedLabelCount;
@@ -18650,7 +18936,7 @@ namespace svcStamp
         {
         }
         
-        public CreateMailingLabelIndiciaResponse(string Authenticator, System.Guid StampsTxId, string Url, string[] ConfirmationNumbers, svcStamp.PostageBalance PostageBalance, int IssuedLabelCount, string ErrorReason, string Mac, string PrintLayout, string Reference1, string Reference2, string Reference3, string Reference4, byte[][] IndiciumData)
+        public CreateMailingLabelIndiciaResponse(string Authenticator, System.Guid StampsTxId, string Url, string[] ConfirmationNumbers, srvStamp.PostageBalance PostageBalance, int IssuedLabelCount, string ErrorReason, string Mac, string PrintLayout, string Reference1, string Reference2, string Reference3, string Reference4, byte[][] IndiciumData)
         {
             this.Authenticator = Authenticator;
             this.StampsTxId = StampsTxId;
@@ -18703,10 +18989,10 @@ namespace svcStamp
         public string Layout;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.NetStampV42[] NetStamps;
+        public srvStamp.NetStampV42[] NetStamps;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.Address ReturnTo;
+        public srvStamp.Address ReturnTo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -18714,7 +19000,7 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
         [System.ComponentModel.DefaultValueAttribute(ImageType.Auto)]
-        public svcStamp.ImageType ImageType;
+        public srvStamp.ImageType ImageType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -18748,7 +19034,7 @@ namespace svcStamp
         public string Reference4;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=16)]
-        public svcStamp.ExtendedPostageInfoV1 ExtendedPostageInfo;
+        public srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=17)]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -18756,7 +19042,7 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=18)]
         [System.ComponentModel.DefaultValueAttribute(ImageDpi.ImageDpiDefault)]
-        public svcStamp.ImageDpi ImageDpi;
+        public srvStamp.ImageDpi ImageDpi;
         
         public CreateNetStampsIndiciaRequest()
         {
@@ -18766,10 +19052,10 @@ namespace svcStamp
                     object Item, 
                     string IntegratorTxId, 
                     string Layout, 
-                    svcStamp.NetStampV42[] NetStamps, 
-                    svcStamp.Address ReturnTo, 
+                    srvStamp.NetStampV42[] NetStamps, 
+                    srvStamp.Address ReturnTo, 
                     bool SampleOnly, 
-                    svcStamp.ImageType ImageType, 
+                    srvStamp.ImageType ImageType, 
                     int cost_code_id, 
                     int ImageId, 
                     bool ReturnIndiciaData, 
@@ -18779,9 +19065,9 @@ namespace svcStamp
                     string Reference2, 
                     string Reference3, 
                     string Reference4, 
-                    svcStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
+                    srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
                     bool ReturnImageData, 
-                    svcStamp.ImageDpi ImageDpi)
+                    srvStamp.ImageDpi ImageDpi)
         {
             this.Item = Item;
             this.IntegratorTxId = IntegratorTxId;
@@ -18824,10 +19110,10 @@ namespace svcStamp
         public string URL;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.PostageBalance PostageBalance;
+        public srvStamp.PostageBalance PostageBalance;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
-        public svcStamp.NetstampsStatus NetstampsStatus;
+        public srvStamp.NetstampsStatus NetstampsStatus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
         public int NetstampsIssued;
@@ -18839,7 +19125,7 @@ namespace svcStamp
         public string Mac;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
-        public svcStamp.IndiciumData[] IndiciaData;
+        public srvStamp.IndiciumData[] IndiciaData;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=10)]
         public string PrintLayout;
@@ -18868,12 +19154,12 @@ namespace svcStamp
                     string IntegratorTxId, 
                     System.Guid StampsTxId, 
                     string URL, 
-                    svcStamp.PostageBalance PostageBalance, 
-                    svcStamp.NetstampsStatus NetstampsStatus, 
+                    srvStamp.PostageBalance PostageBalance, 
+                    srvStamp.NetstampsStatus NetstampsStatus, 
                     int NetstampsIssued, 
                     string ErrorReason, 
                     string Mac, 
-                    svcStamp.IndiciumData[] IndiciaData, 
+                    srvStamp.IndiciumData[] IndiciaData, 
                     string PrintLayout, 
                     string Reference1, 
                     string Reference2, 
@@ -18948,31 +19234,31 @@ namespace svcStamp
         public string Password;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.CodewordType Codeword1Type;
+        public srvStamp.CodewordType Codeword1Type;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
         public string Codeword1;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
-        public svcStamp.CodewordType Codeword2Type;
+        public srvStamp.CodewordType Codeword2Type;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
         public string Codeword2;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
-        public svcStamp.Address PhysicalAddress;
+        public srvStamp.Address PhysicalAddress;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=8)]
-        public svcStamp.Address MailingAddress;
+        public srvStamp.Address MailingAddress;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
-        public svcStamp.MachineInfo MachineInfo;
+        public srvStamp.MachineInfo MachineInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=10)]
         public string Email;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=11)]
-        public svcStamp.AccountType AccountType;
+        public srvStamp.AccountType AccountType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=12)]
         public string PromoCode;
@@ -19006,15 +19292,15 @@ namespace svcStamp
                     System.Guid IntegrationID, 
                     string UserName, 
                     string Password, 
-                    svcStamp.CodewordType Codeword1Type, 
+                    srvStamp.CodewordType Codeword1Type, 
                     string Codeword1, 
-                    svcStamp.CodewordType Codeword2Type, 
+                    srvStamp.CodewordType Codeword2Type, 
                     string Codeword2, 
-                    svcStamp.Address PhysicalAddress, 
-                    svcStamp.Address MailingAddress, 
-                    svcStamp.MachineInfo MachineInfo, 
+                    srvStamp.Address PhysicalAddress, 
+                    srvStamp.Address MailingAddress, 
+                    srvStamp.MachineInfo MachineInfo, 
                     string Email, 
-                    svcStamp.AccountType AccountType, 
+                    srvStamp.AccountType AccountType, 
                     string PromoCode, 
                     object Item, 
                     System.Nullable<bool> SendEmail, 
@@ -19050,7 +19336,7 @@ namespace svcStamp
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public svcStamp.RegistrationStatus RegistrationStatus;
+        public srvStamp.RegistrationStatus RegistrationStatus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
         public string SuggestedUserName;
@@ -19065,7 +19351,7 @@ namespace svcStamp
         {
         }
         
-        public RegisterAccountResponse(svcStamp.RegistrationStatus RegistrationStatus, string SuggestedUserName, int UserId, string PromoUrl)
+        public RegisterAccountResponse(srvStamp.RegistrationStatus RegistrationStatus, string SuggestedUserName, int UserId, string PromoUrl)
         {
             this.RegistrationStatus = RegistrationStatus;
             this.SuggestedUserName = SuggestedUserName;
@@ -19076,6 +19362,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="AddCarrier", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class AddCarrierRequest
     {
@@ -19089,7 +19376,7 @@ namespace svcStamp
         public bool UserOwnedAccount;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.Carrier Carrier;
+        public srvStamp.Carrier Carrier;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
         public string AccountNumber;
@@ -19102,14 +19389,14 @@ namespace svcStamp
         public string AccountCountry;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
-        public svcStamp.Address Address;
+        public srvStamp.Address Address;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
         [System.ComponentModel.DefaultValueAttribute(false)]
         public bool AgreeToEula;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=8)]
-        public svcStamp.Invoice Invoice;
+        public srvStamp.Invoice Invoice;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -19134,7 +19421,7 @@ namespace svcStamp
         {
         }
         
-        public AddCarrierRequest(object Item, bool UserOwnedAccount, svcStamp.Carrier Carrier, string AccountNumber, string AccountZIPCode, string AccountCountry, svcStamp.Address Address, bool AgreeToEula, svcStamp.Invoice Invoice, bool NegotiatedRates, string DeviceIdentity, string ClientId, string ClientSecret, string PickupNumber, string DistributionCenter)
+        public AddCarrierRequest(object Item, bool UserOwnedAccount, srvStamp.Carrier Carrier, string AccountNumber, string AccountZIPCode, string AccountCountry, srvStamp.Address Address, bool AgreeToEula, srvStamp.Invoice Invoice, bool NegotiatedRates, string DeviceIdentity, string ClientId, string ClientSecret, string PickupNumber, string DistributionCenter)
         {
             this.Item = Item;
             this.UserOwnedAccount = UserOwnedAccount;
@@ -19156,6 +19443,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="AddCarrierResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class AddCarrierResponse
     {
@@ -19246,7 +19534,7 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.MachineInfo MachineInfo;
+        public srvStamp.MachineInfo MachineInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -19266,7 +19554,7 @@ namespace svcStamp
         {
         }
         
-        public AddUserPaymentMethodRequest(object Item, svcStamp.MachineInfo MachineInfo, System.Nullable<DefaultPaymentMethodTypeOptions> DefaultPaymentMethodType, object Item1, System.Nullable<bool> SendEmail)
+        public AddUserPaymentMethodRequest(object Item, srvStamp.MachineInfo MachineInfo, System.Nullable<DefaultPaymentMethodTypeOptions> DefaultPaymentMethodType, object Item1, System.Nullable<bool> SendEmail)
         {
             this.Item = Item;
             this.MachineInfo = MachineInfo;
@@ -19335,13 +19623,13 @@ namespace svcStamp
         public bool Authenticated;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.UserInfo AccountInfo;
+        public srvStamp.UserInfo AccountInfo;
         
         public AuthenticateBridgeAuthenticatorResponse()
         {
         }
         
-        public AuthenticateBridgeAuthenticatorResponse(string Authenticator, bool Authenticated, svcStamp.UserInfo AccountInfo)
+        public AuthenticateBridgeAuthenticatorResponse(string Authenticator, bool Authenticated, srvStamp.UserInfo AccountInfo)
         {
             this.Authenticator = Authenticator;
             this.Authenticated = Authenticated;
@@ -19356,13 +19644,13 @@ namespace svcStamp
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public svcStamp.Credentials Credentials;
+        public srvStamp.Credentials Credentials;
         
         public AuthenticateUserRequest()
         {
         }
         
-        public AuthenticateUserRequest(svcStamp.Credentials Credentials)
+        public AuthenticateUserRequest(srvStamp.Credentials Credentials)
         {
             this.Credentials = Credentials;
         }
@@ -19410,48 +19698,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AuthenticateWithTransferAuthenticator", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class AuthenticateWithTransferAuthenticatorRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public System.Guid integrationID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public string transferAuthenticator;
-        
-        public AuthenticateWithTransferAuthenticatorRequest()
-        {
-        }
-        
-        public AuthenticateWithTransferAuthenticatorRequest(System.Guid integrationID, string transferAuthenticator)
-        {
-            this.integrationID = integrationID;
-            this.transferAuthenticator = transferAuthenticator;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AuthenticateWithTransferAuthenticatorResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class AuthenticateWithTransferAuthenticatorResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public string Authenticator;
-        
-        public AuthenticateWithTransferAuthenticatorResponse()
-        {
-        }
-        
-        public AuthenticateWithTransferAuthenticatorResponse(string Authenticator)
-        {
-            this.Authenticator = Authenticator;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="CancelAccount", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class CancelAccountRequest
     {
@@ -19494,6 +19741,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="CancelAccountResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class CancelAccountResponse
     {
@@ -19527,17 +19775,17 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.ComponentModel.DefaultValueAttribute(Carrier.USPS)]
-        public svcStamp.Carrier Carrier;
+        public srvStamp.Carrier Carrier;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
         [System.ComponentModel.DefaultValueAttribute(CarrierPickupType.Default)]
-        public svcStamp.CarrierPickupType PickupType;
+        public srvStamp.CarrierPickupType PickupType;
         
         public CancelCarrierPickupRequest()
         {
         }
         
-        public CancelCarrierPickupRequest(object Item, string ConfirmationNumber, svcStamp.Carrier Carrier, svcStamp.CarrierPickupType PickupType)
+        public CancelCarrierPickupRequest(object Item, string ConfirmationNumber, srvStamp.Carrier Carrier, srvStamp.CarrierPickupType PickupType)
         {
             this.Item = Item;
             this.ConfirmationNumber = ConfirmationNumber;
@@ -19571,6 +19819,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="CancelIndicium", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class CancelIndiciumRequest
     {
@@ -19603,6 +19852,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="CancelIndiciumResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class CancelIndiciumResponse
     {
@@ -19622,6 +19872,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="ChangeDefaultPaymentMethod", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class ChangeDefaultPaymentMethodRequest
     {
@@ -19632,10 +19883,10 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.MachineInfo MachineInfo;
+        public srvStamp.MachineInfo MachineInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.DefaultPaymentMethodTypeOptions PaymentType;
+        public srvStamp.DefaultPaymentMethodTypeOptions PaymentType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
         public string PaymentMethodID;
@@ -19648,7 +19899,7 @@ namespace svcStamp
         {
         }
         
-        public ChangeDefaultPaymentMethodRequest(object Item, svcStamp.MachineInfo MachineInfo, svcStamp.DefaultPaymentMethodTypeOptions PaymentType, string PaymentMethodID, System.Nullable<bool> SendEmail)
+        public ChangeDefaultPaymentMethodRequest(object Item, srvStamp.MachineInfo MachineInfo, srvStamp.DefaultPaymentMethodTypeOptions PaymentType, string PaymentMethodID, System.Nullable<bool> SendEmail)
         {
             this.Item = Item;
             this.MachineInfo = MachineInfo;
@@ -19660,6 +19911,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="ChangeDefaultPaymentMethodResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class ChangeDefaultPaymentMethodResponse
     {
@@ -19679,6 +19931,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="ChangePassword", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class ChangePasswordRequest
     {
@@ -19709,6 +19962,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="ChangePasswordResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class ChangePasswordResponse
     {
@@ -19790,7 +20044,7 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.PurchaseStatus PurchaseStatus;
+        public srvStamp.PurchaseStatus PurchaseStatus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         public int TransactionID;
@@ -19802,7 +20056,7 @@ namespace svcStamp
         {
         }
         
-        public ChangePlanResponse(string Authenticator, svcStamp.PurchaseStatus PurchaseStatus, int TransactionID, string RejectionReason)
+        public ChangePlanResponse(string Authenticator, srvStamp.PurchaseStatus PurchaseStatus, int TransactionID, string RejectionReason)
         {
             this.Authenticator = Authenticator;
             this.PurchaseStatus = PurchaseStatus;
@@ -19828,17 +20082,17 @@ namespace svcStamp
         public System.DateTime Date;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.CarrierPickupAddress Address;
+        public srvStamp.CarrierPickupAddress Address;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
         [System.ComponentModel.DefaultValueAttribute(Carrier.USPS)]
-        public svcStamp.Carrier Carrier;
+        public srvStamp.Carrier Carrier;
         
         public CheckCarrierPickupAvailabilityRequest()
         {
         }
         
-        public CheckCarrierPickupAvailabilityRequest(object Item, System.DateTime Date, svcStamp.CarrierPickupAddress Address, svcStamp.Carrier Carrier)
+        public CheckCarrierPickupAvailabilityRequest(object Item, System.DateTime Date, srvStamp.CarrierPickupAddress Address, srvStamp.Carrier Carrier)
         {
             this.Item = Item;
             this.Date = Date;
@@ -19925,7 +20179,7 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.Address Address;
+        public srvStamp.Address Address;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.ComponentModel.DefaultValueAttribute("")]
@@ -19935,7 +20189,7 @@ namespace svcStamp
         {
         }
         
-        public CleanseAddressRequest(object Item, svcStamp.Address Address, string FromZIPCode)
+        public CleanseAddressRequest(object Item, srvStamp.Address Address, string FromZIPCode)
         {
             this.Item = Item;
             this.Address = Address;
@@ -19953,7 +20207,7 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.Address Address;
+        public srvStamp.Address Address;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         public bool AddressMatch;
@@ -19962,33 +20216,33 @@ namespace svcStamp
         public bool CityStateZipOK;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.ResidentialDeliveryIndicatorType ResidentialDeliveryIndicator;
+        public srvStamp.ResidentialDeliveryIndicatorType ResidentialDeliveryIndicator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public System.Nullable<bool> IsPOBox;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
-        public svcStamp.Address[] CandidateAddresses;
+        public srvStamp.Address[] CandidateAddresses;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
-        public svcStamp.StatusCodes StatusCodes;
+        public srvStamp.StatusCodes StatusCodes;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=8)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Rate")]
-        public svcStamp.RateV46[] Rates;
+        public srvStamp.RateV46[] Rates;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
         public string AddressCleansingResult;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=10)]
-        public svcStamp.AddressVerificationLevel VerificationLevel;
+        public srvStamp.AddressVerificationLevel VerificationLevel;
         
         public CleanseAddressResponse()
         {
         }
         
-        public CleanseAddressResponse(string Authenticator, svcStamp.Address Address, bool AddressMatch, bool CityStateZipOK, svcStamp.ResidentialDeliveryIndicatorType ResidentialDeliveryIndicator, System.Nullable<bool> IsPOBox, svcStamp.Address[] CandidateAddresses, svcStamp.StatusCodes StatusCodes, svcStamp.RateV46[] Rates, string AddressCleansingResult, svcStamp.AddressVerificationLevel VerificationLevel)
+        public CleanseAddressResponse(string Authenticator, srvStamp.Address Address, bool AddressMatch, bool CityStateZipOK, srvStamp.ResidentialDeliveryIndicatorType ResidentialDeliveryIndicator, System.Nullable<bool> IsPOBox, srvStamp.Address[] CandidateAddresses, srvStamp.StatusCodes StatusCodes, srvStamp.RateV46[] Rates, string AddressCleansingResult, srvStamp.AddressVerificationLevel VerificationLevel)
         {
             this.Authenticator = Authenticator;
             this.Address = Address;
@@ -20016,7 +20270,7 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.BrandingProperties BrandingProperties;
+        public srvStamp.BrandingProperties BrandingProperties;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         public string Reference;
@@ -20029,7 +20283,7 @@ namespace svcStamp
         {
         }
         
-        public CreateBrandingRequest(object Item, svcStamp.BrandingProperties BrandingProperties, string Reference, bool SetAsDefault)
+        public CreateBrandingRequest(object Item, srvStamp.BrandingProperties BrandingProperties, string Reference, bool SetAsDefault)
         {
             this.Item = Item;
             this.BrandingProperties = BrandingProperties;
@@ -20090,17 +20344,17 @@ namespace svcStamp
         public string PrintLayout;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
-        public svcStamp.Address FromAddress;
+        public srvStamp.Address FromAddress;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
-        public svcStamp.ImageType ImageType;
+        public srvStamp.ImageType ImageType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=8)]
         public bool PrintInstructions;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
         [System.ComponentModel.DefaultValueAttribute(ManifestType.ScanForm)]
-        public svcStamp.ManifestType ManifestType;
+        public srvStamp.ManifestType ManifestType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=10)]
         [System.ComponentModel.DefaultValueAttribute(0)]
@@ -20110,7 +20364,7 @@ namespace svcStamp
         {
         }
         
-        public CreateManifestRequest(object Item, string IntegratorTxID, System.Guid[] StampsTxIds, string[] TrackingNumbers, System.Nullable<System.DateTime> ShipDate, string PrintLayout, svcStamp.Address FromAddress, svcStamp.ImageType ImageType, bool PrintInstructions, svcStamp.ManifestType ManifestType, int NumberOfLabels)
+        public CreateManifestRequest(object Item, string IntegratorTxID, System.Guid[] StampsTxIds, string[] TrackingNumbers, System.Nullable<System.DateTime> ShipDate, string PrintLayout, srvStamp.Address FromAddress, srvStamp.ImageType ImageType, bool PrintInstructions, srvStamp.ManifestType ManifestType, int NumberOfLabels)
         {
             this.Item = Item;
             this.IntegratorTxID = IntegratorTxID;
@@ -20139,13 +20393,13 @@ namespace svcStamp
         public string IntegratorTxID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.EndOfDayManifest[] EndOfDayManifests;
+        public srvStamp.EndOfDayManifest[] EndOfDayManifests;
         
         public CreateManifestResponse()
         {
         }
         
-        public CreateManifestResponse(string Authenticator, string IntegratorTxID, svcStamp.EndOfDayManifest[] EndOfDayManifests)
+        public CreateManifestResponse(string Authenticator, string IntegratorTxID, srvStamp.EndOfDayManifest[] EndOfDayManifests)
         {
             this.Authenticator = Authenticator;
             this.IntegratorTxID = IntegratorTxID;
@@ -20165,7 +20419,7 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.NotificationSettingProperties NotificationSettingProperties;
+        public srvStamp.NotificationSettingProperties NotificationSettingProperties;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         public string Reference;
@@ -20178,7 +20432,7 @@ namespace svcStamp
         {
         }
         
-        public CreateNotificationSettingRequest(object Item, svcStamp.NotificationSettingProperties NotificationSettingProperties, string Reference, bool SetAsDefault)
+        public CreateNotificationSettingRequest(object Item, srvStamp.NotificationSettingProperties NotificationSettingProperties, string Reference, bool SetAsDefault)
         {
             this.Item = Item;
             this.NotificationSettingProperties = NotificationSettingProperties;
@@ -20250,13 +20504,13 @@ namespace svcStamp
         public string EmailSenderName;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=9)]
-        public svcStamp.Address From;
+        public srvStamp.Address From;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=10)]
-        public svcStamp.Address To;
+        public srvStamp.Address To;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=11)]
-        public svcStamp.OrderDetails OrderDetails;
+        public srvStamp.OrderDetails OrderDetails;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=12)]
         public System.DateTime ShipDate;
@@ -20269,7 +20523,7 @@ namespace svcStamp
         {
         }
         
-        public CreateShipmentNotificationRequest(object Item, string TrackingNumber, string Carrier, double WeightLb, double WeightOz, string TrackingType, System.Nullable<System.Guid> BrandingId, System.Nullable<System.Guid> NotificationSettingId, string EmailSenderName, svcStamp.Address From, svcStamp.Address To, svcStamp.OrderDetails OrderDetails, System.DateTime ShipDate, bool SendEmail)
+        public CreateShipmentNotificationRequest(object Item, string TrackingNumber, string Carrier, double WeightLb, double WeightOz, string TrackingType, System.Nullable<System.Guid> BrandingId, System.Nullable<System.Guid> NotificationSettingId, string EmailSenderName, srvStamp.Address From, srvStamp.Address To, srvStamp.OrderDetails OrderDetails, System.DateTime ShipDate, bool SendEmail)
         {
             this.Item = Item;
             this.TrackingNumber = TrackingNumber;
@@ -20313,6 +20567,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteBranding", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteBrandingRequest
     {
@@ -20338,6 +20593,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteBrandingResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteBrandingResponse
     {
@@ -20357,6 +20613,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCarrier", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteCarrierRequest
     {
@@ -20367,13 +20624,13 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.Carrier Carrier;
+        public srvStamp.Carrier Carrier;
         
         public DeleteCarrierRequest()
         {
         }
         
-        public DeleteCarrierRequest(object Item, svcStamp.Carrier Carrier)
+        public DeleteCarrierRequest(object Item, srvStamp.Carrier Carrier)
         {
             this.Item = Item;
             this.Carrier = Carrier;
@@ -20382,6 +20639,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteCarrierResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteCarrierResponse
     {
@@ -20401,6 +20659,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteImage", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteImageRequest
     {
@@ -20426,6 +20685,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteImageResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteImageResponse
     {
@@ -20445,6 +20705,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteNotificationSetting", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteNotificationSettingRequest
     {
@@ -20470,6 +20731,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteNotificationSettingResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteNotificationSettingResponse
     {
@@ -20489,6 +20751,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteUserPaymentMethod", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteUserPaymentMethodRequest
     {
@@ -20514,6 +20777,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteUserPaymentMethodResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class DeleteUserPaymentMethodResponse
     {
@@ -20533,6 +20797,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="EnumCodeWordTypes", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class EnumCodeWordTypesRequest
     {
@@ -20544,19 +20809,20 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="EnumCodeWordTypesResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class EnumCodeWordTypesResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("CodewordV2")]
-        public svcStamp.Codeword[] CodeWords;
+        public srvStamp.Codeword[] CodeWords;
         
         public EnumCodeWordTypesResponse()
         {
         }
         
-        public EnumCodeWordTypesResponse(svcStamp.Codeword[] CodeWords)
+        public EnumCodeWordTypesResponse(srvStamp.Codeword[] CodeWords)
         {
             this.CodeWords = CodeWords;
         }
@@ -20594,13 +20860,13 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
         [System.Xml.Serialization.XmlArrayItemAttribute("CostCodes")]
-        public svcStamp.cost_code_info_v1[] CostCodes;
+        public srvStamp.cost_code_info_v1[] CostCodes;
         
         public EnumCostCodesResponse()
         {
         }
         
-        public EnumCostCodesResponse(string Authenticator, svcStamp.cost_code_info_v1[] CostCodes)
+        public EnumCostCodesResponse(string Authenticator, srvStamp.cost_code_info_v1[] CostCodes)
         {
             this.Authenticator = Authenticator;
             this.CostCodes = CostCodes;
@@ -20638,13 +20904,13 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.NetStampsLayout[] Layouts;
+        public srvStamp.NetStampsLayout[] Layouts;
         
         public EnumNetStampsLayoutsResponse()
         {
         }
         
-        public EnumNetStampsLayoutsResponse(string Authenticator, svcStamp.NetStampsLayout[] Layouts)
+        public EnumNetStampsLayoutsResponse(string Authenticator, srvStamp.NetStampsLayout[] Layouts)
         {
             this.Authenticator = Authenticator;
             this.Layouts = Layouts;
@@ -20653,6 +20919,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="FinishAccountVerification", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class FinishAccountVerificationRequest
     {
@@ -20678,6 +20945,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="FinishAccountVerificationResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class FinishAccountVerificationResponse
     {
@@ -20692,48 +20960,6 @@ namespace svcStamp
         public FinishAccountVerificationResponse(string Authenticator)
         {
             this.Authenticator = Authenticator;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FinishPasswordReset", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class FinishPasswordResetRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public string Username;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public string TempPassword;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public string NewPassword;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public System.Guid IntegrationId;
-        
-        public FinishPasswordResetRequest()
-        {
-        }
-        
-        public FinishPasswordResetRequest(string Username, string TempPassword, string NewPassword, System.Guid IntegrationId)
-        {
-            this.Username = Username;
-            this.TempPassword = TempPassword;
-            this.NewPassword = NewPassword;
-            this.IntegrationId = IntegrationId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FinishPasswordResetResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class FinishPasswordResetResponse
-    {
-        
-        public FinishPasswordResetResponse()
-        {
         }
     }
     
@@ -20768,10 +20994,10 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.AccountInfoV65 AccountInfo;
+        public srvStamp.AccountInfoV65 AccountInfo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.Address Address;
+        public srvStamp.Address Address;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
         public string CustomerEmail;
@@ -20780,7 +21006,7 @@ namespace svcStamp
         public string AccountStatus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
-        public svcStamp.DateAdvance DateAdvanceConfig;
+        public srvStamp.DateAdvance DateAdvanceConfig;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
         public string VerificationPhoneNumber;
@@ -20792,7 +21018,7 @@ namespace svcStamp
         {
         }
         
-        public GetAccountInfoResponse(string Authenticator, svcStamp.AccountInfoV65 AccountInfo, svcStamp.Address Address, string CustomerEmail, string AccountStatus, svcStamp.DateAdvance DateAdvanceConfig, string VerificationPhoneNumber, string VerificationPhoneExtension)
+        public GetAccountInfoResponse(string Authenticator, srvStamp.AccountInfoV65 AccountInfo, srvStamp.Address Address, string CustomerEmail, string AccountStatus, srvStamp.DateAdvance DateAdvanceConfig, string VerificationPhoneNumber, string VerificationPhoneExtension)
         {
             this.Authenticator = Authenticator;
             this.AccountInfo = AccountInfo;
@@ -20829,13 +21055,13 @@ namespace svcStamp
         public System.Nullable<System.DateTime> TransactionDateMax;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.TransactionType[] Filters;
+        public srvStamp.TransactionType[] Filters;
         
         public GetBalanceHistoryRequest()
         {
         }
         
-        public GetBalanceHistoryRequest(object Item, System.Nullable<int> TransactionsPerPage, System.DateTime TransactionDateMin, System.Nullable<System.DateTime> TransactionDateMax, svcStamp.TransactionType[] Filters)
+        public GetBalanceHistoryRequest(object Item, System.Nullable<int> TransactionsPerPage, System.DateTime TransactionDateMin, System.Nullable<System.DateTime> TransactionDateMax, srvStamp.TransactionType[] Filters)
         {
             this.Item = Item;
             this.TransactionsPerPage = TransactionsPerPage;
@@ -20864,13 +21090,13 @@ namespace svcStamp
         public int TotalPages;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.Transaction[] Transactions;
+        public srvStamp.Transaction[] Transactions;
         
         public GetBalanceHistoryResponse()
         {
         }
         
-        public GetBalanceHistoryResponse(string Authenticator, string BalanceHistoryToken, int TotalTransactions, int TotalPages, svcStamp.Transaction[] Transactions)
+        public GetBalanceHistoryResponse(string Authenticator, string BalanceHistoryToken, int TotalTransactions, int TotalPages, srvStamp.Transaction[] Transactions)
         {
             this.Authenticator = Authenticator;
             this.BalanceHistoryToken = BalanceHistoryToken;
@@ -20929,13 +21155,13 @@ namespace svcStamp
         public int TotalTransactions;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.Transaction[] Transactions;
+        public srvStamp.Transaction[] Transactions;
         
         public GetBalanceHistoryByTokenResponse()
         {
         }
         
-        public GetBalanceHistoryByTokenResponse(string Authenticator, string BalanceHistoryToken, int TransactionsPerPage, int TotalTransactions, svcStamp.Transaction[] Transactions)
+        public GetBalanceHistoryByTokenResponse(string Authenticator, string BalanceHistoryToken, int TransactionsPerPage, int TotalTransactions, srvStamp.Transaction[] Transactions)
         {
             this.Authenticator = Authenticator;
             this.BalanceHistoryToken = BalanceHistoryToken;
@@ -20976,7 +21202,7 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.Branding[] Brandings;
+        public srvStamp.Branding[] Brandings;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -20986,7 +21212,7 @@ namespace svcStamp
         {
         }
         
-        public GetBrandingResponse(string Authenticator, svcStamp.Branding[] Brandings, System.Nullable<System.Guid> defaultBrandingId)
+        public GetBrandingResponse(string Authenticator, srvStamp.Branding[] Brandings, System.Nullable<System.Guid> defaultBrandingId)
         {
             this.Authenticator = Authenticator;
             this.Brandings = Brandings;
@@ -21025,13 +21251,13 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.CarrierPickupInformation[] Pickups;
+        public srvStamp.CarrierPickupInformation[] Pickups;
         
         public GetCarrierPickupListResponse()
         {
         }
         
-        public GetCarrierPickupListResponse(string Authenticator, svcStamp.CarrierPickupInformation[] Pickups)
+        public GetCarrierPickupListResponse(string Authenticator, srvStamp.CarrierPickupInformation[] Pickups)
         {
             this.Authenticator = Authenticator;
             this.Pickups = Pickups;
@@ -21073,7 +21299,7 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.PurchaseStatus PurchaseStatus;
+        public srvStamp.PurchaseStatus PurchaseStatus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         public string RejectionReason;
@@ -21082,7 +21308,7 @@ namespace svcStamp
         {
         }
         
-        public GetChangePlanStatusResponse(string Authenticator, svcStamp.PurchaseStatus PurchaseStatus, string RejectionReason)
+        public GetChangePlanStatusResponse(string Authenticator, srvStamp.PurchaseStatus PurchaseStatus, string RejectionReason)
         {
             this.Authenticator = Authenticator;
             this.PurchaseStatus = PurchaseStatus;
@@ -21167,13 +21393,13 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.Image[] Images;
+        public srvStamp.Image[] Images;
         
         public GetImageListResponse()
         {
         }
         
-        public GetImageListResponse(string Authenticator, svcStamp.Image[] Images)
+        public GetImageListResponse(string Authenticator, srvStamp.Image[] Images)
         {
             this.Authenticator = Authenticator;
             this.Images = Images;
@@ -21211,13 +21437,13 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.NetStampsImage[] NetStampsImages;
+        public srvStamp.NetStampsImage[] NetStampsImages;
         
         public GetNetStampsImagesResponse()
         {
         }
         
-        public GetNetStampsImagesResponse(string Authenticator, svcStamp.NetStampsImage[] NetStampsImages)
+        public GetNetStampsImagesResponse(string Authenticator, srvStamp.NetStampsImage[] NetStampsImages)
         {
             this.Authenticator = Authenticator;
             this.NetStampsImages = NetStampsImages;
@@ -21259,13 +21485,13 @@ namespace svcStamp
         public System.Nullable<System.Guid> DefaultNotificationSettingId;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.NotificationSetting[] NotificationSettings;
+        public srvStamp.NotificationSetting[] NotificationSettings;
         
         public GetNotificationSettingsResponse()
         {
         }
         
-        public GetNotificationSettingsResponse(string Authenticator, System.Nullable<System.Guid> DefaultNotificationSettingId, svcStamp.NotificationSetting[] NotificationSettings)
+        public GetNotificationSettingsResponse(string Authenticator, System.Nullable<System.Guid> DefaultNotificationSettingId, srvStamp.NotificationSetting[] NotificationSettings)
         {
             this.Authenticator = Authenticator;
             this.DefaultNotificationSettingId = DefaultNotificationSettingId;
@@ -21366,16 +21592,16 @@ namespace svcStamp
         public string ShipmentsPerPage;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.Filters Filters;
+        public srvStamp.Filters Filters;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.IncludeField[] IncludeFields;
+        public srvStamp.IncludeField[] IncludeFields;
         
         public GetShipmentListRequest()
         {
         }
         
-        public GetShipmentListRequest(object Item, string ShipmentsPerPage, svcStamp.Filters Filters, svcStamp.IncludeField[] IncludeFields)
+        public GetShipmentListRequest(object Item, string ShipmentsPerPage, srvStamp.Filters Filters, srvStamp.IncludeField[] IncludeFields)
         {
             this.Item = Item;
             this.ShipmentsPerPage = ShipmentsPerPage;
@@ -21400,13 +21626,13 @@ namespace svcStamp
         public int TotalPages;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.ShipmentV39[] Shipments;
+        public srvStamp.ShipmentV39[] Shipments;
         
         public GetShipmentListResponse()
         {
         }
         
-        public GetShipmentListResponse(string Authenticator, string ShipmentListToken, int TotalPages, svcStamp.ShipmentV39[] Shipments)
+        public GetShipmentListResponse(string Authenticator, string ShipmentListToken, int TotalPages, srvStamp.ShipmentV39[] Shipments)
         {
             this.Authenticator = Authenticator;
             this.ShipmentListToken = ShipmentListToken;
@@ -21463,13 +21689,13 @@ namespace svcStamp
         public int TotalPages;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.ShipmentV39[] Shipments;
+        public srvStamp.ShipmentV39[] Shipments;
         
         public GetShipmentListByTokenResponse()
         {
         }
         
-        public GetShipmentListByTokenResponse(string Authenticator, string ShipmentListToken, int ShipmentsPerPage, int TotalPages, svcStamp.ShipmentV39[] Shipments)
+        public GetShipmentListByTokenResponse(string Authenticator, string ShipmentListToken, int ShipmentsPerPage, int TotalPages, srvStamp.ShipmentV39[] Shipments)
         {
             this.Authenticator = Authenticator;
             this.ShipmentListToken = ShipmentListToken;
@@ -21510,13 +21736,13 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.CountryInfo[] CountryInfo;
+        public srvStamp.CountryInfo[] CountryInfo;
         
         public GetSupportedCountriesResponse()
         {
         }
         
-        public GetSupportedCountriesResponse(string Authenticator, svcStamp.CountryInfo[] CountryInfo)
+        public GetSupportedCountriesResponse(string Authenticator, srvStamp.CountryInfo[] CountryInfo)
         {
             this.Authenticator = Authenticator;
             this.CountryInfo = CountryInfo;
@@ -21800,7 +22026,7 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.UrlType URLType;
+        public srvStamp.UrlType URLType;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         public string ApplicationContext;
@@ -21809,7 +22035,7 @@ namespace svcStamp
         {
         }
         
-        public GetURLRequest(object Item, svcStamp.UrlType URLType, string ApplicationContext)
+        public GetURLRequest(object Item, srvStamp.UrlType URLType, string ApplicationContext)
         {
             this.Item = Item;
             this.URLType = URLType;
@@ -21879,13 +22105,13 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.PaymentMethod[] PaymentMethods;
+        public srvStamp.PaymentMethod[] PaymentMethods;
         
         public ListPaymentMethodsResponse()
         {
         }
         
-        public ListPaymentMethodsResponse(string Authenticator, svcStamp.PaymentMethod[] PaymentMethods)
+        public ListPaymentMethodsResponse(string Authenticator, srvStamp.PaymentMethod[] PaymentMethods)
         {
             this.Authenticator = Authenticator;
             this.PaymentMethods = PaymentMethods;
@@ -21894,6 +22120,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="ModifyBranding", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class ModifyBrandingRequest
     {
@@ -21904,7 +22131,7 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.Branding Branding;
+        public srvStamp.Branding Branding;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -21914,7 +22141,7 @@ namespace svcStamp
         {
         }
         
-        public ModifyBrandingRequest(object Item, svcStamp.Branding Branding, bool SetAsDefault)
+        public ModifyBrandingRequest(object Item, srvStamp.Branding Branding, bool SetAsDefault)
         {
             this.Item = Item;
             this.Branding = Branding;
@@ -21924,6 +22151,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="ModifyBrandingResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class ModifyBrandingResponse
     {
@@ -21953,27 +22181,27 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.CarrierPickupContactInformation ContactInformation;
+        public srvStamp.CarrierPickupContactInformation ContactInformation;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.CarrierPickupPackageInformation PackageInformation;
+        public srvStamp.CarrierPickupPackageInformation PackageInformation;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
         public string ConfirmationNumber;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
         [System.ComponentModel.DefaultValueAttribute(Carrier.USPS)]
-        public svcStamp.Carrier Carrier;
+        public srvStamp.Carrier Carrier;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
         [System.ComponentModel.DefaultValueAttribute(CarrierPickupType.Default)]
-        public svcStamp.CarrierPickupType PickupType;
+        public srvStamp.CarrierPickupType PickupType;
         
         public ModifyCarrierPickupRequest()
         {
         }
         
-        public ModifyCarrierPickupRequest(object Item, svcStamp.CarrierPickupContactInformation ContactInformation, svcStamp.CarrierPickupPackageInformation PackageInformation, string ConfirmationNumber, svcStamp.Carrier Carrier, svcStamp.CarrierPickupType PickupType)
+        public ModifyCarrierPickupRequest(object Item, srvStamp.CarrierPickupContactInformation ContactInformation, srvStamp.CarrierPickupPackageInformation PackageInformation, string ConfirmationNumber, srvStamp.Carrier Carrier, srvStamp.CarrierPickupType PickupType)
         {
             this.Item = Item;
             this.ContactInformation = ContactInformation;
@@ -22021,6 +22249,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="ModifyNotificationSetting", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class ModifyNotificationSettingRequest
     {
@@ -22031,7 +22260,7 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.NotificationSetting NotificationSetting;
+        public srvStamp.NotificationSetting NotificationSetting;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.ComponentModel.DefaultValueAttribute(false)]
@@ -22041,7 +22270,7 @@ namespace svcStamp
         {
         }
         
-        public ModifyNotificationSettingRequest(object Item, svcStamp.NotificationSetting NotificationSetting, bool SetAsDefault)
+        public ModifyNotificationSettingRequest(object Item, srvStamp.NotificationSetting NotificationSetting, bool SetAsDefault)
         {
             this.Item = Item;
             this.NotificationSetting = NotificationSetting;
@@ -22051,6 +22280,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="ModifyNotificationSettingResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class ModifyNotificationSettingResponse
     {
@@ -22080,23 +22310,23 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.Sku[] Skus;
+        public srvStamp.Sku[] Skus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.ComponentModel.DefaultValueAttribute("")]
         public string PromoCode;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.Address ShippingAddress;
+        public srvStamp.Address ShippingAddress;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
-        public svcStamp.StoreShippingMethodType StoreShippingMethod;
+        public srvStamp.StoreShippingMethodType StoreShippingMethod;
         
         public PlaceOrderRequest()
         {
         }
         
-        public PlaceOrderRequest(object Item, svcStamp.Sku[] Skus, string PromoCode, svcStamp.Address ShippingAddress, svcStamp.StoreShippingMethodType StoreShippingMethod)
+        public PlaceOrderRequest(object Item, srvStamp.Sku[] Skus, string PromoCode, srvStamp.Address ShippingAddress, srvStamp.StoreShippingMethodType StoreShippingMethod)
         {
             this.Item = Item;
             this.Skus = Skus;
@@ -22147,20 +22377,20 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.Sku[] Skus;
+        public srvStamp.Sku[] Skus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.ComponentModel.DefaultValueAttribute("")]
         public string PromoCode;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.Address ShippingAddress;
+        public srvStamp.Address ShippingAddress;
         
         public PriceOrderRequest()
         {
         }
         
-        public PriceOrderRequest(object Item, svcStamp.Sku[] Skus, string PromoCode, svcStamp.Address ShippingAddress)
+        public PriceOrderRequest(object Item, srvStamp.Sku[] Skus, string PromoCode, srvStamp.Address ShippingAddress)
         {
             this.Item = Item;
             this.Skus = Skus;
@@ -22179,13 +22409,13 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.StoreShippingMethodOption[] StoreShippingMethodOptions;
+        public srvStamp.StoreShippingMethodOption[] StoreShippingMethodOptions;
         
         public PriceOrderResponse()
         {
         }
         
-        public PriceOrderResponse(string Authenticator, svcStamp.StoreShippingMethodOption[] StoreShippingMethodOptions)
+        public PriceOrderResponse(string Authenticator, srvStamp.StoreShippingMethodOption[] StoreShippingMethodOptions)
         {
             this.Authenticator = Authenticator;
             this.StoreShippingMethodOptions = StoreShippingMethodOptions;
@@ -22210,7 +22440,7 @@ namespace svcStamp
         public decimal ControlTotal;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.MachineInfo MI;
+        public srvStamp.MachineInfo MI;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
         public string IntegratorTxID;
@@ -22223,7 +22453,7 @@ namespace svcStamp
         {
         }
         
-        public PurchasePostageRequest(object Item, decimal PurchaseAmount, decimal ControlTotal, svcStamp.MachineInfo MI, string IntegratorTxID, System.Nullable<bool> SendEmail)
+        public PurchasePostageRequest(object Item, decimal PurchaseAmount, decimal ControlTotal, srvStamp.MachineInfo MI, string IntegratorTxID, System.Nullable<bool> SendEmail)
         {
             this.Item = Item;
             this.PurchaseAmount = PurchaseAmount;
@@ -22244,13 +22474,13 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.PurchaseStatus PurchaseStatus;
+        public srvStamp.PurchaseStatus PurchaseStatus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         public int TransactionID;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.PostageBalance PostageBalance;
+        public srvStamp.PostageBalance PostageBalance;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
         public string RejectionReason;
@@ -22265,7 +22495,7 @@ namespace svcStamp
         {
         }
         
-        public PurchasePostageResponse(string Authenticator, svcStamp.PurchaseStatus PurchaseStatus, int TransactionID, svcStamp.PostageBalance PostageBalance, string RejectionReason, bool MIRequired, string ProcessorTransactionID)
+        public PurchasePostageResponse(string Authenticator, srvStamp.PurchaseStatus PurchaseStatus, int TransactionID, srvStamp.PostageBalance PostageBalance, string RejectionReason, bool MIRequired, string ProcessorTransactionID)
         {
             this.Authenticator = Authenticator;
             this.PurchaseStatus = PurchaseStatus;
@@ -22274,116 +22504,6 @@ namespace svcStamp
             this.RejectionReason = RejectionReason;
             this.MIRequired = MIRequired;
             this.ProcessorTransactionID = ProcessorTransactionID;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RecoverUsername", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class RecoverUsernameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public string EmailAddress;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public string Reserved;
-        
-        public RecoverUsernameRequest()
-        {
-        }
-        
-        public RecoverUsernameRequest(string EmailAddress, string Reserved)
-        {
-            this.EmailAddress = EmailAddress;
-            this.Reserved = Reserved;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RecoverUsernameResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class RecoverUsernameResponse
-    {
-        
-        public RecoverUsernameResponse()
-        {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RegisterShippingProviderAccount", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class RegisterShippingProviderAccountRequest1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public svcStamp.RegisterShippingProviderAccountRequest registerShippingProviderAccountRequest;
-        
-        public RegisterShippingProviderAccountRequest1()
-        {
-        }
-        
-        public RegisterShippingProviderAccountRequest1(svcStamp.RegisterShippingProviderAccountRequest registerShippingProviderAccountRequest)
-        {
-            this.registerShippingProviderAccountRequest = registerShippingProviderAccountRequest;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RegisterShippingProviderAccountResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class RegisterShippingProviderAccountResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public string Authenticator;
-        
-        public RegisterShippingProviderAccountResponse()
-        {
-        }
-        
-        public RegisterShippingProviderAccountResponse(string Authenticator)
-        {
-            this.Authenticator = Authenticator;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReprintIndicium", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class ReprintIndiciumRequest1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public svcStamp.ReprintIndiciumRequest indiciumRequest;
-        
-        public ReprintIndiciumRequest1()
-        {
-        }
-        
-        public ReprintIndiciumRequest1(svcStamp.ReprintIndiciumRequest indiciumRequest)
-        {
-            this.indiciumRequest = indiciumRequest;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ReprintIndiciumResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class ReprintIndiciumResponse1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public svcStamp.ReprintIndiciumResponse ReprintIndiciumResult;
-        
-        public ReprintIndiciumResponse1()
-        {
-        }
-        
-        public ReprintIndiciumResponse1(svcStamp.ReprintIndiciumResponse ReprintIndiciumResult)
-        {
-            this.ReprintIndiciumResult = ReprintIndiciumResult;
         }
     }
     
@@ -22434,7 +22554,7 @@ namespace svcStamp
         public int WaitIntervalSeconds;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
-        public svcStamp.PurchaseStatus PurchaseStatus;
+        public srvStamp.PurchaseStatus PurchaseStatus;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
         public string RejectionReason;
@@ -22443,7 +22563,7 @@ namespace svcStamp
         {
         }
         
-        public ResubmitPurchaseResponse(string Authenticator, int TransactionID, decimal ChargedAmount, decimal PendingAmount, int WaitIntervalSeconds, svcStamp.PurchaseStatus PurchaseStatus, string RejectionReason)
+        public ResubmitPurchaseResponse(string Authenticator, int TransactionID, decimal ChargedAmount, decimal PendingAmount, int WaitIntervalSeconds, srvStamp.PurchaseStatus PurchaseStatus, string RejectionReason)
         {
             this.Authenticator = Authenticator;
             this.TransactionID = TransactionID;
@@ -22467,17 +22587,17 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.CarrierPickupContactInformationV2 ContactInformation;
+        public srvStamp.CarrierPickupContactInformationV2 ContactInformation;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public svcStamp.CarrierPickupAddressV3 Address;
+        public srvStamp.CarrierPickupAddressV3 Address;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.CarrierPickupPackageInformation PackageInformation;
+        public srvStamp.CarrierPickupPackageInformation PackageInformation;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
         [System.ComponentModel.DefaultValueAttribute(Carrier.USPS)]
-        public svcStamp.Carrier Carrier;
+        public srvStamp.Carrier Carrier;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=5)]
         [System.ComponentModel.DefaultValueAttribute("")]
@@ -22489,13 +22609,13 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=7)]
         [System.ComponentModel.DefaultValueAttribute(CarrierPickupType.Default)]
-        public svcStamp.CarrierPickupType PickupType;
+        public srvStamp.CarrierPickupType PickupType;
         
         public ScheduleCarrierPickupRequest()
         {
         }
         
-        public ScheduleCarrierPickupRequest(object Item, svcStamp.CarrierPickupContactInformationV2 ContactInformation, svcStamp.CarrierPickupAddressV3 Address, svcStamp.CarrierPickupPackageInformation PackageInformation, svcStamp.Carrier Carrier, string PickupTimeEarliest, string PickupTimeLatest, svcStamp.CarrierPickupType PickupType)
+        public ScheduleCarrierPickupRequest(object Item, srvStamp.CarrierPickupContactInformationV2 ContactInformation, srvStamp.CarrierPickupAddressV3 Address, srvStamp.CarrierPickupPackageInformation PackageInformation, srvStamp.Carrier Carrier, string PickupTimeEarliest, string PickupTimeLatest, srvStamp.CarrierPickupType PickupType)
         {
             this.Item = Item;
             this.ContactInformation = ContactInformation;
@@ -22555,6 +22675,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="SetAutoBuy", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class SetAutoBuyRequest
     {
@@ -22565,13 +22686,13 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.AutoBuySettings AutoBuySettings;
+        public srvStamp.AutoBuySettings AutoBuySettings;
         
         public SetAutoBuyRequest()
         {
         }
         
-        public SetAutoBuyRequest(object Item, svcStamp.AutoBuySettings AutoBuySettings)
+        public SetAutoBuyRequest(object Item, srvStamp.AutoBuySettings AutoBuySettings)
         {
             this.Item = Item;
             this.AutoBuySettings = AutoBuySettings;
@@ -22580,6 +22701,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="SetAutoBuyResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class SetAutoBuyResponse
     {
@@ -22599,6 +22721,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="SetCodeWords", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class SetCodeWordsRequest
     {
@@ -22609,13 +22732,13 @@ namespace svcStamp
         public object Item;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.CodewordType Codeword1Type;
+        public srvStamp.CodewordType Codeword1Type;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         public string Codeword1;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.CodewordType Codeword2Type;
+        public srvStamp.CodewordType Codeword2Type;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=4)]
         public string Codeword2;
@@ -22624,7 +22747,7 @@ namespace svcStamp
         {
         }
         
-        public SetCodeWordsRequest(object Item, svcStamp.CodewordType Codeword1Type, string Codeword1, svcStamp.CodewordType Codeword2Type, string Codeword2)
+        public SetCodeWordsRequest(object Item, srvStamp.CodewordType Codeword1Type, string Codeword1, srvStamp.CodewordType Codeword2Type, string Codeword2)
         {
             this.Item = Item;
             this.Codeword1Type = Codeword1Type;
@@ -22636,6 +22759,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="SetCodeWordsResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class SetCodeWordsResponse
     {
@@ -22668,6 +22792,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="StartAccountVerification", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class StartAccountVerificationRequest
     {
@@ -22684,13 +22809,13 @@ namespace svcStamp
         public string Extension;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public svcStamp.PhoneVerificationOption PhoneVerificationOption;
+        public srvStamp.PhoneVerificationOption PhoneVerificationOption;
         
         public StartAccountVerificationRequest()
         {
         }
         
-        public StartAccountVerificationRequest(object Item, string PhoneNumber, string Extension, svcStamp.PhoneVerificationOption PhoneVerificationOption)
+        public StartAccountVerificationRequest(object Item, string PhoneNumber, string Extension, srvStamp.PhoneVerificationOption PhoneVerificationOption)
         {
             this.Item = Item;
             this.PhoneNumber = PhoneNumber;
@@ -22701,6 +22826,7 @@ namespace svcStamp
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="StartAccountVerificationResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
     public partial class StartAccountVerificationResponse
     {
@@ -22715,48 +22841,6 @@ namespace svcStamp
         public StartAccountVerificationResponse(string Authenticator)
         {
             this.Authenticator = Authenticator;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="StartPasswordReset", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class StartPasswordResetRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=0)]
-        public string Username;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public string Codeword1;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
-        public string Codeword2;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=3)]
-        public System.Guid IntegrationId;
-        
-        public StartPasswordResetRequest()
-        {
-        }
-        
-        public StartPasswordResetRequest(string Username, string Codeword1, string Codeword2, System.Guid IntegrationId)
-        {
-            this.Username = Username;
-            this.Codeword1 = Codeword1;
-            this.Codeword2 = Codeword2;
-            this.IntegrationId = IntegrationId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="StartPasswordResetResponse", WrapperNamespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", IsWrapped=true)]
-    public partial class StartPasswordResetResponse
-    {
-        
-        public StartPasswordResetResponse()
-        {
         }
     }
     
@@ -22778,13 +22862,13 @@ namespace svcStamp
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.ComponentModel.DefaultValueAttribute(Carrier.All)]
-        public svcStamp.Carrier Carrier;
+        public srvStamp.Carrier Carrier;
         
         public TrackShipmentRequest()
         {
         }
         
-        public TrackShipmentRequest(object Item, object Item1, svcStamp.Carrier Carrier)
+        public TrackShipmentRequest(object Item, object Item1, srvStamp.Carrier Carrier)
         {
             this.Item = Item;
             this.Item1 = Item1;
@@ -22802,7 +22886,7 @@ namespace svcStamp
         public string Authenticator;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=1)]
-        public svcStamp.TrackingEvent[] TrackingEvents;
+        public srvStamp.TrackingEvent[] TrackingEvents;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -22819,13 +22903,13 @@ namespace svcStamp
         public string Carrier;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://stamps.com/xml/namespace/2023/07/swsim/SwsimV135", Order=6)]
-        public svcStamp.DestinationInfo DestinationInfo;
+        public srvStamp.DestinationInfo DestinationInfo;
         
         public TrackShipmentResponse()
         {
         }
         
-        public TrackShipmentResponse(string Authenticator, svcStamp.TrackingEvent[] TrackingEvents, System.Nullable<System.DateTime> GuaranteedDeliveryDate, System.Nullable<System.DateTime> ExpectedDeliveryDate, string ServiceDescription, string Carrier, svcStamp.DestinationInfo DestinationInfo)
+        public TrackShipmentResponse(string Authenticator, srvStamp.TrackingEvent[] TrackingEvents, System.Nullable<System.DateTime> GuaranteedDeliveryDate, System.Nullable<System.DateTime> ExpectedDeliveryDate, string ServiceDescription, string Carrier, srvStamp.DestinationInfo DestinationInfo)
         {
             this.Authenticator = Authenticator;
             this.TrackingEvents = TrackingEvents;
@@ -22838,13 +22922,13 @@ namespace svcStamp
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public interface SwsimV135SoapChannel : svcStamp.SwsimV135Soap, System.ServiceModel.IClientChannel
+    public interface SwsimV135SoapChannel : srvStamp.SwsimV135Soap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public partial class SwsimV135SoapClient : System.ServiceModel.ClientBase<svcStamp.SwsimV135Soap>, svcStamp.SwsimV135Soap
+    public partial class SwsimV135SoapClient : System.ServiceModel.ClientBase<srvStamp.SwsimV135Soap>, srvStamp.SwsimV135Soap
     {
         
         /// <summary>
@@ -22880,327 +22964,1973 @@ namespace svcStamp
         {
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetRatesResponse> GetRatesAsync(svcStamp.GetRatesRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetRatesResponse srvStamp.SwsimV135Soap.GetRates(srvStamp.GetRatesRequest request)
+        {
+            return base.Channel.GetRates(request);
+        }
+        
+        public string GetRates(object Item, srvStamp.RateV46 Rate, srvStamp.Carrier Carrier, out srvStamp.RateV46[] Rates)
+        {
+            srvStamp.GetRatesRequest inValue = new srvStamp.GetRatesRequest();
+            inValue.Item = Item;
+            inValue.Rate = Rate;
+            inValue.Carrier = Carrier;
+            srvStamp.GetRatesResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetRates(inValue);
+            Rates = retVal.Rates;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetRatesResponse> GetRatesAsync(srvStamp.GetRatesRequest request)
         {
             return base.Channel.GetRatesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CreateIndiciumResponse> CreateIndiciumAsync(svcStamp.CreateIndiciumRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CreateIndiciumResponse srvStamp.SwsimV135Soap.CreateIndicium(srvStamp.CreateIndiciumRequest request)
+        {
+            return base.Channel.CreateIndicium(request);
+        }
+        
+        public string CreateIndicium(
+                    object Item, 
+                    ref string IntegratorTxID, 
+                    ref string TrackingNumber, 
+                    ref srvStamp.RateV46 Rate, 
+                    srvStamp.Address ReturnTo, 
+                    string CustomerID, 
+                    srvStamp.CustomsV8 Customs, 
+                    bool SampleOnly, 
+                    srvStamp.PostageMode PostageMode, 
+                    srvStamp.ImageType ImageType, 
+                    srvStamp.EltronPrinterDPIType EltronPrinterDPIType, 
+                    string memo, 
+                    int cost_code_id, 
+                    bool deliveryNotification, 
+                    srvStamp.ShipmentNotification ShipmentNotification, 
+                    int rotationDegrees, 
+                    System.Nullable<int> horizontalOffset, 
+                    System.Nullable<int> verticalOffset, 
+                    System.Nullable<int> printDensity, 
+                    System.Nullable<bool> printMemo, 
+                    System.Nullable<bool> printInstructions, 
+                    bool requestPostageHash, 
+                    srvStamp.NonDeliveryOption nonDeliveryOption, 
+                    srvStamp.Address RedirectTo, 
+                    string OutboundTransactionID, 
+                    string OriginalPostageHash, 
+                    System.Nullable<bool> ReturnImageData, 
+                    string InternalTransactionNumber, 
+                    srvStamp.PaperSizeV1 PaperSize, 
+                    srvStamp.LabelRecipientInfo EmailLabelTo, 
+                    bool PayOnPrint, 
+                    System.Nullable<int> ReturnLabelExpirationDays, 
+                    srvStamp.ImageDpi ImageDpi, 
+                    string RateToken, 
+                    string OrderId, 
+                    bool BypassCleanseAddress, 
+                    int ImageId, 
+                    ref string Reference1, 
+                    ref string Reference2, 
+                    ref string Reference3, 
+                    ref string Reference4, 
+                    bool ReturnIndiciumData, 
+                    srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
+                    srvStamp.EnclosedServiceType EnclosedServiceType, 
+                    srvStamp.EnclosedPackageType EnclosedPackageType, 
+                    srvStamp.OrderDetails OrderDetails, 
+                    System.Nullable<System.Guid> BrandingId, 
+                    System.Nullable<System.Guid> NotificationSettingId, 
+                    string GroupCode, 
+                    string Description, 
+                    out string EncodedTrackingNumber, 
+                    out string BannerText, 
+                    out string TrailingSuperScript, 
+                    out string ReturnTrackingNumber, 
+                    out System.Guid StampsTxID, 
+                    out string URL, 
+                    out srvStamp.PostageBalance PostageBalance, 
+                    out string Mac, 
+                    out string PostageHash, 
+                    out byte[][] ImageData, 
+                    out srvStamp.HoldForPickUpFacility HoldForPickUpFacility, 
+                    out string FormURL, 
+                    out string labelCategory, 
+                    out byte[] IndiciumData, 
+                    out string LabelID)
+        {
+            srvStamp.CreateIndiciumRequest inValue = new srvStamp.CreateIndiciumRequest();
+            inValue.Item = Item;
+            inValue.IntegratorTxID = IntegratorTxID;
+            inValue.TrackingNumber = TrackingNumber;
+            inValue.Rate = Rate;
+            inValue.ReturnTo = ReturnTo;
+            inValue.CustomerID = CustomerID;
+            inValue.Customs = Customs;
+            inValue.SampleOnly = SampleOnly;
+            inValue.PostageMode = PostageMode;
+            inValue.ImageType = ImageType;
+            inValue.EltronPrinterDPIType = EltronPrinterDPIType;
+            inValue.memo = memo;
+            inValue.cost_code_id = cost_code_id;
+            inValue.deliveryNotification = deliveryNotification;
+            inValue.ShipmentNotification = ShipmentNotification;
+            inValue.rotationDegrees = rotationDegrees;
+            inValue.horizontalOffset = horizontalOffset;
+            inValue.verticalOffset = verticalOffset;
+            inValue.printDensity = printDensity;
+            inValue.printMemo = printMemo;
+            inValue.printInstructions = printInstructions;
+            inValue.requestPostageHash = requestPostageHash;
+            inValue.nonDeliveryOption = nonDeliveryOption;
+            inValue.RedirectTo = RedirectTo;
+            inValue.OutboundTransactionID = OutboundTransactionID;
+            inValue.OriginalPostageHash = OriginalPostageHash;
+            inValue.ReturnImageData = ReturnImageData;
+            inValue.InternalTransactionNumber = InternalTransactionNumber;
+            inValue.PaperSize = PaperSize;
+            inValue.EmailLabelTo = EmailLabelTo;
+            inValue.PayOnPrint = PayOnPrint;
+            inValue.ReturnLabelExpirationDays = ReturnLabelExpirationDays;
+            inValue.ImageDpi = ImageDpi;
+            inValue.RateToken = RateToken;
+            inValue.OrderId = OrderId;
+            inValue.BypassCleanseAddress = BypassCleanseAddress;
+            inValue.ImageId = ImageId;
+            inValue.Reference1 = Reference1;
+            inValue.Reference2 = Reference2;
+            inValue.Reference3 = Reference3;
+            inValue.Reference4 = Reference4;
+            inValue.ReturnIndiciumData = ReturnIndiciumData;
+            inValue.ExtendedPostageInfo = ExtendedPostageInfo;
+            inValue.EnclosedServiceType = EnclosedServiceType;
+            inValue.EnclosedPackageType = EnclosedPackageType;
+            inValue.OrderDetails = OrderDetails;
+            inValue.BrandingId = BrandingId;
+            inValue.NotificationSettingId = NotificationSettingId;
+            inValue.GroupCode = GroupCode;
+            inValue.Description = Description;
+            srvStamp.CreateIndiciumResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CreateIndicium(inValue);
+            IntegratorTxID = retVal.IntegratorTxID;
+            TrackingNumber = retVal.TrackingNumber;
+            EncodedTrackingNumber = retVal.EncodedTrackingNumber;
+            BannerText = retVal.BannerText;
+            TrailingSuperScript = retVal.TrailingSuperScript;
+            ReturnTrackingNumber = retVal.ReturnTrackingNumber;
+            Rate = retVal.Rate;
+            StampsTxID = retVal.StampsTxID;
+            URL = retVal.URL;
+            PostageBalance = retVal.PostageBalance;
+            Mac = retVal.Mac;
+            PostageHash = retVal.PostageHash;
+            ImageData = retVal.ImageData;
+            HoldForPickUpFacility = retVal.HoldForPickUpFacility;
+            FormURL = retVal.FormURL;
+            Reference1 = retVal.Reference1;
+            Reference2 = retVal.Reference2;
+            Reference3 = retVal.Reference3;
+            Reference4 = retVal.Reference4;
+            labelCategory = retVal.labelCategory;
+            IndiciumData = retVal.IndiciumData;
+            LabelID = retVal.LabelID;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CreateIndiciumResponse> CreateIndiciumAsync(srvStamp.CreateIndiciumRequest request)
         {
             return base.Channel.CreateIndiciumAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CreateEnvelopeIndiciumResponse> CreateEnvelopeIndiciumAsync(svcStamp.CreateEnvelopeIndiciumRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CreateEnvelopeIndiciumResponse srvStamp.SwsimV135Soap.CreateEnvelopeIndicium(srvStamp.CreateEnvelopeIndiciumRequest request)
+        {
+            return base.Channel.CreateEnvelopeIndicium(request);
+        }
+        
+        public string CreateEnvelopeIndicium(
+                    object Item, 
+                    ref string IntegratorTxID, 
+                    ref srvStamp.RateV46 Rate, 
+                    srvStamp.Address ReturnTo, 
+                    System.Nullable<bool> PrintFromAddress, 
+                    System.Nullable<bool> PrintToAddress, 
+                    string CustomerID, 
+                    srvStamp.CreateIndiciumModeV1 Mode, 
+                    srvStamp.ImageType ImageType, 
+                    int CostCodeId, 
+                    bool HideFIM, 
+                    string RateToken, 
+                    string OrderId, 
+                    string memo, 
+                    bool BypassCleanseAddress, 
+                    int ImageId, 
+                    int ImageId2, 
+                    ref string Reference1, 
+                    ref string Reference2, 
+                    ref string Reference3, 
+                    ref string Reference4, 
+                    bool ReturnIndiciumData, 
+                    srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
+                    bool ReturnImageData, 
+                    srvStamp.ImageDpi ImageDpi, 
+                    out string TrackingNumber, 
+                    out System.Guid StampsTxID, 
+                    out string URL, 
+                    out srvStamp.PostageBalance PostageBalance, 
+                    out string Mac, 
+                    out string PostageHash, 
+                    out byte[] IndiciumData, 
+                    out byte[][] ImageData)
+        {
+            srvStamp.CreateEnvelopeIndiciumRequest inValue = new srvStamp.CreateEnvelopeIndiciumRequest();
+            inValue.Item = Item;
+            inValue.IntegratorTxID = IntegratorTxID;
+            inValue.Rate = Rate;
+            inValue.ReturnTo = ReturnTo;
+            inValue.PrintFromAddress = PrintFromAddress;
+            inValue.PrintToAddress = PrintToAddress;
+            inValue.CustomerID = CustomerID;
+            inValue.Mode = Mode;
+            inValue.ImageType = ImageType;
+            inValue.CostCodeId = CostCodeId;
+            inValue.HideFIM = HideFIM;
+            inValue.RateToken = RateToken;
+            inValue.OrderId = OrderId;
+            inValue.memo = memo;
+            inValue.BypassCleanseAddress = BypassCleanseAddress;
+            inValue.ImageId = ImageId;
+            inValue.ImageId2 = ImageId2;
+            inValue.Reference1 = Reference1;
+            inValue.Reference2 = Reference2;
+            inValue.Reference3 = Reference3;
+            inValue.Reference4 = Reference4;
+            inValue.ReturnIndiciumData = ReturnIndiciumData;
+            inValue.ExtendedPostageInfo = ExtendedPostageInfo;
+            inValue.ReturnImageData = ReturnImageData;
+            inValue.ImageDpi = ImageDpi;
+            srvStamp.CreateEnvelopeIndiciumResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CreateEnvelopeIndicium(inValue);
+            IntegratorTxID = retVal.IntegratorTxID;
+            TrackingNumber = retVal.TrackingNumber;
+            Rate = retVal.Rate;
+            StampsTxID = retVal.StampsTxID;
+            URL = retVal.URL;
+            PostageBalance = retVal.PostageBalance;
+            Mac = retVal.Mac;
+            PostageHash = retVal.PostageHash;
+            Reference1 = retVal.Reference1;
+            Reference2 = retVal.Reference2;
+            Reference3 = retVal.Reference3;
+            Reference4 = retVal.Reference4;
+            IndiciumData = retVal.IndiciumData;
+            ImageData = retVal.ImageData;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CreateEnvelopeIndiciumResponse> CreateEnvelopeIndiciumAsync(srvStamp.CreateEnvelopeIndiciumRequest request)
         {
             return base.Channel.CreateEnvelopeIndiciumAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CreateMailingLabelIndiciaResponse> CreateMailingLabelIndiciaAsync(svcStamp.CreateMailingLabelIndiciaRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CreateMailingLabelIndiciaResponse srvStamp.SwsimV135Soap.CreateMailingLabelIndicia(srvStamp.CreateMailingLabelIndiciaRequest request)
+        {
+            return base.Channel.CreateMailingLabelIndicia(request);
+        }
+        
+        public string CreateMailingLabelIndicia(
+                    object Item, 
+                    string IntegratorTxId, 
+                    string Layout, 
+                    bool PrintToAddress, 
+                    int StartRow, 
+                    int StartColumn, 
+                    srvStamp.IndiciumInfoV39[] IndiciumInfo, 
+                    srvStamp.CreateIndiciumModeV1 Mode, 
+                    srvStamp.ImageType ImageType, 
+                    string RateToken, 
+                    string memo, 
+                    bool BypassCleanseAddress, 
+                    ref string Reference1, 
+                    ref string Reference2, 
+                    ref string Reference3, 
+                    ref string Reference4, 
+                    bool ReturnIndiciumData, 
+                    srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
+                    int ImageId, 
+                    System.Nullable<bool> PrintFromAddress, 
+                    out System.Guid StampsTxId, 
+                    out string Url, 
+                    out string[] ConfirmationNumbers, 
+                    out srvStamp.PostageBalance PostageBalance, 
+                    out int IssuedLabelCount, 
+                    out string ErrorReason, 
+                    out string Mac, 
+                    out string PrintLayout, 
+                    out byte[][] IndiciumData)
+        {
+            srvStamp.CreateMailingLabelIndiciaRequest inValue = new srvStamp.CreateMailingLabelIndiciaRequest();
+            inValue.Item = Item;
+            inValue.IntegratorTxId = IntegratorTxId;
+            inValue.Layout = Layout;
+            inValue.PrintToAddress = PrintToAddress;
+            inValue.StartRow = StartRow;
+            inValue.StartColumn = StartColumn;
+            inValue.IndiciumInfo = IndiciumInfo;
+            inValue.Mode = Mode;
+            inValue.ImageType = ImageType;
+            inValue.RateToken = RateToken;
+            inValue.memo = memo;
+            inValue.BypassCleanseAddress = BypassCleanseAddress;
+            inValue.Reference1 = Reference1;
+            inValue.Reference2 = Reference2;
+            inValue.Reference3 = Reference3;
+            inValue.Reference4 = Reference4;
+            inValue.ReturnIndiciumData = ReturnIndiciumData;
+            inValue.ExtendedPostageInfo = ExtendedPostageInfo;
+            inValue.ImageId = ImageId;
+            inValue.PrintFromAddress = PrintFromAddress;
+            srvStamp.CreateMailingLabelIndiciaResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CreateMailingLabelIndicia(inValue);
+            StampsTxId = retVal.StampsTxId;
+            Url = retVal.Url;
+            ConfirmationNumbers = retVal.ConfirmationNumbers;
+            PostageBalance = retVal.PostageBalance;
+            IssuedLabelCount = retVal.IssuedLabelCount;
+            ErrorReason = retVal.ErrorReason;
+            Mac = retVal.Mac;
+            PrintLayout = retVal.PrintLayout;
+            Reference1 = retVal.Reference1;
+            Reference2 = retVal.Reference2;
+            Reference3 = retVal.Reference3;
+            Reference4 = retVal.Reference4;
+            IndiciumData = retVal.IndiciumData;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CreateMailingLabelIndiciaResponse> CreateMailingLabelIndiciaAsync(srvStamp.CreateMailingLabelIndiciaRequest request)
         {
             return base.Channel.CreateMailingLabelIndiciaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CreateNetStampsIndiciaResponse> CreateNetStampsIndiciaAsync(svcStamp.CreateNetStampsIndiciaRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CreateNetStampsIndiciaResponse srvStamp.SwsimV135Soap.CreateNetStampsIndicia(srvStamp.CreateNetStampsIndiciaRequest request)
+        {
+            return base.Channel.CreateNetStampsIndicia(request);
+        }
+        
+        public string CreateNetStampsIndicia(
+                    object Item, 
+                    ref string IntegratorTxId, 
+                    string Layout, 
+                    srvStamp.NetStampV42[] NetStamps, 
+                    srvStamp.Address ReturnTo, 
+                    bool SampleOnly, 
+                    srvStamp.ImageType ImageType, 
+                    int cost_code_id, 
+                    int ImageId, 
+                    bool ReturnIndiciaData, 
+                    string RateToken, 
+                    string memo, 
+                    ref string Reference1, 
+                    ref string Reference2, 
+                    ref string Reference3, 
+                    ref string Reference4, 
+                    srvStamp.ExtendedPostageInfoV1 ExtendedPostageInfo, 
+                    bool ReturnImageData, 
+                    srvStamp.ImageDpi ImageDpi, 
+                    out System.Guid StampsTxId, 
+                    out string URL, 
+                    out srvStamp.PostageBalance PostageBalance, 
+                    out srvStamp.NetstampsStatus NetstampsStatus, 
+                    out int NetstampsIssued, 
+                    out string ErrorReason, 
+                    out string Mac, 
+                    out srvStamp.IndiciumData[] IndiciaData, 
+                    out string PrintLayout, 
+                    out byte[][] ImageData)
+        {
+            srvStamp.CreateNetStampsIndiciaRequest inValue = new srvStamp.CreateNetStampsIndiciaRequest();
+            inValue.Item = Item;
+            inValue.IntegratorTxId = IntegratorTxId;
+            inValue.Layout = Layout;
+            inValue.NetStamps = NetStamps;
+            inValue.ReturnTo = ReturnTo;
+            inValue.SampleOnly = SampleOnly;
+            inValue.ImageType = ImageType;
+            inValue.cost_code_id = cost_code_id;
+            inValue.ImageId = ImageId;
+            inValue.ReturnIndiciaData = ReturnIndiciaData;
+            inValue.RateToken = RateToken;
+            inValue.memo = memo;
+            inValue.Reference1 = Reference1;
+            inValue.Reference2 = Reference2;
+            inValue.Reference3 = Reference3;
+            inValue.Reference4 = Reference4;
+            inValue.ExtendedPostageInfo = ExtendedPostageInfo;
+            inValue.ReturnImageData = ReturnImageData;
+            inValue.ImageDpi = ImageDpi;
+            srvStamp.CreateNetStampsIndiciaResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CreateNetStampsIndicia(inValue);
+            IntegratorTxId = retVal.IntegratorTxId;
+            StampsTxId = retVal.StampsTxId;
+            URL = retVal.URL;
+            PostageBalance = retVal.PostageBalance;
+            NetstampsStatus = retVal.NetstampsStatus;
+            NetstampsIssued = retVal.NetstampsIssued;
+            ErrorReason = retVal.ErrorReason;
+            Mac = retVal.Mac;
+            IndiciaData = retVal.IndiciaData;
+            PrintLayout = retVal.PrintLayout;
+            Reference1 = retVal.Reference1;
+            Reference2 = retVal.Reference2;
+            Reference3 = retVal.Reference3;
+            Reference4 = retVal.Reference4;
+            ImageData = retVal.ImageData;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CreateNetStampsIndiciaResponse> CreateNetStampsIndiciaAsync(srvStamp.CreateNetStampsIndiciaRequest request)
         {
             return base.Channel.CreateNetStampsIndiciaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.RegisterAccountResponse> RegisterAccountAsync(svcStamp.RegisterAccountRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.RegisterAccountResponse srvStamp.SwsimV135Soap.RegisterAccount(srvStamp.RegisterAccountRequest request)
+        {
+            return base.Channel.RegisterAccount(request);
+        }
+        
+        public srvStamp.RegistrationStatus RegisterAccount(
+                    System.Guid IntegrationID, 
+                    string UserName, 
+                    string Password, 
+                    srvStamp.CodewordType Codeword1Type, 
+                    string Codeword1, 
+                    srvStamp.CodewordType Codeword2Type, 
+                    string Codeword2, 
+                    srvStamp.Address PhysicalAddress, 
+                    srvStamp.Address MailingAddress, 
+                    srvStamp.MachineInfo MachineInfo, 
+                    string Email, 
+                    srvStamp.AccountType AccountType, 
+                    string PromoCode, 
+                    object Item, 
+                    System.Nullable<bool> SendEmail, 
+                    System.Nullable<bool> ResetPasswordAfterRegistration, 
+                    string UserCurrency, 
+                    string IovationBlackBox, 
+                    out string SuggestedUserName, 
+                    out int UserId, 
+                    out string PromoUrl)
+        {
+            srvStamp.RegisterAccountRequest inValue = new srvStamp.RegisterAccountRequest();
+            inValue.IntegrationID = IntegrationID;
+            inValue.UserName = UserName;
+            inValue.Password = Password;
+            inValue.Codeword1Type = Codeword1Type;
+            inValue.Codeword1 = Codeword1;
+            inValue.Codeword2Type = Codeword2Type;
+            inValue.Codeword2 = Codeword2;
+            inValue.PhysicalAddress = PhysicalAddress;
+            inValue.MailingAddress = MailingAddress;
+            inValue.MachineInfo = MachineInfo;
+            inValue.Email = Email;
+            inValue.AccountType = AccountType;
+            inValue.PromoCode = PromoCode;
+            inValue.Item = Item;
+            inValue.SendEmail = SendEmail;
+            inValue.ResetPasswordAfterRegistration = ResetPasswordAfterRegistration;
+            inValue.UserCurrency = UserCurrency;
+            inValue.IovationBlackBox = IovationBlackBox;
+            srvStamp.RegisterAccountResponse retVal = ((srvStamp.SwsimV135Soap)(this)).RegisterAccount(inValue);
+            SuggestedUserName = retVal.SuggestedUserName;
+            UserId = retVal.UserId;
+            PromoUrl = retVal.PromoUrl;
+            return retVal.RegistrationStatus;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.RegisterAccountResponse> RegisterAccountAsync(srvStamp.RegisterAccountRequest request)
         {
             return base.Channel.RegisterAccountAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.AddCarrierResponse> AddCarrierAsync(svcStamp.AddCarrierRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.AddCarrierResponse srvStamp.SwsimV135Soap.AddCarrier(srvStamp.AddCarrierRequest request)
+        {
+            return base.Channel.AddCarrier(request);
+        }
+        
+        public string AddCarrier(object Item, bool UserOwnedAccount, srvStamp.Carrier Carrier, string AccountNumber, string AccountZIPCode, string AccountCountry, srvStamp.Address Address, bool AgreeToEula, srvStamp.Invoice Invoice, bool NegotiatedRates, string DeviceIdentity, string ClientId, string ClientSecret, string PickupNumber, string DistributionCenter)
+        {
+            srvStamp.AddCarrierRequest inValue = new srvStamp.AddCarrierRequest();
+            inValue.Item = Item;
+            inValue.UserOwnedAccount = UserOwnedAccount;
+            inValue.Carrier = Carrier;
+            inValue.AccountNumber = AccountNumber;
+            inValue.AccountZIPCode = AccountZIPCode;
+            inValue.AccountCountry = AccountCountry;
+            inValue.Address = Address;
+            inValue.AgreeToEula = AgreeToEula;
+            inValue.Invoice = Invoice;
+            inValue.NegotiatedRates = NegotiatedRates;
+            inValue.DeviceIdentity = DeviceIdentity;
+            inValue.ClientId = ClientId;
+            inValue.ClientSecret = ClientSecret;
+            inValue.PickupNumber = PickupNumber;
+            inValue.DistributionCenter = DistributionCenter;
+            srvStamp.AddCarrierResponse retVal = ((srvStamp.SwsimV135Soap)(this)).AddCarrier(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.AddCarrierResponse> srvStamp.SwsimV135Soap.AddCarrierAsync(srvStamp.AddCarrierRequest request)
         {
             return base.Channel.AddCarrierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.AddImageResponse> AddImageAsync(svcStamp.AddImageRequest request)
+        public System.Threading.Tasks.Task<srvStamp.AddCarrierResponse> AddCarrierAsync(object Item, bool UserOwnedAccount, srvStamp.Carrier Carrier, string AccountNumber, string AccountZIPCode, string AccountCountry, srvStamp.Address Address, bool AgreeToEula, srvStamp.Invoice Invoice, bool NegotiatedRates, string DeviceIdentity, string ClientId, string ClientSecret, string PickupNumber, string DistributionCenter)
+        {
+            srvStamp.AddCarrierRequest inValue = new srvStamp.AddCarrierRequest();
+            inValue.Item = Item;
+            inValue.UserOwnedAccount = UserOwnedAccount;
+            inValue.Carrier = Carrier;
+            inValue.AccountNumber = AccountNumber;
+            inValue.AccountZIPCode = AccountZIPCode;
+            inValue.AccountCountry = AccountCountry;
+            inValue.Address = Address;
+            inValue.AgreeToEula = AgreeToEula;
+            inValue.Invoice = Invoice;
+            inValue.NegotiatedRates = NegotiatedRates;
+            inValue.DeviceIdentity = DeviceIdentity;
+            inValue.ClientId = ClientId;
+            inValue.ClientSecret = ClientSecret;
+            inValue.PickupNumber = PickupNumber;
+            inValue.DistributionCenter = DistributionCenter;
+            return ((srvStamp.SwsimV135Soap)(this)).AddCarrierAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.AddImageResponse srvStamp.SwsimV135Soap.AddImage(srvStamp.AddImageRequest request)
+        {
+            return base.Channel.AddImage(request);
+        }
+        
+        public string AddImage(object Item, string ImageName, string ImageData, System.Nullable<ImageCategory> ImageCategory, out string ImageId, out string ImageUrl)
+        {
+            srvStamp.AddImageRequest inValue = new srvStamp.AddImageRequest();
+            inValue.Item = Item;
+            inValue.ImageName = ImageName;
+            inValue.ImageData = ImageData;
+            inValue.ImageCategory = ImageCategory;
+            srvStamp.AddImageResponse retVal = ((srvStamp.SwsimV135Soap)(this)).AddImage(inValue);
+            ImageId = retVal.ImageId;
+            ImageUrl = retVal.ImageUrl;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.AddImageResponse> AddImageAsync(srvStamp.AddImageRequest request)
         {
             return base.Channel.AddImageAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.AddUserPaymentMethodResponse> AddUserPaymentMethodAsync(svcStamp.AddUserPaymentMethodRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.AddUserPaymentMethodResponse srvStamp.SwsimV135Soap.AddUserPaymentMethod(srvStamp.AddUserPaymentMethodRequest request)
+        {
+            return base.Channel.AddUserPaymentMethod(request);
+        }
+        
+        public string AddUserPaymentMethod(object Item, srvStamp.MachineInfo MachineInfo, System.Nullable<DefaultPaymentMethodTypeOptions> DefaultPaymentMethodType, object Item1, System.Nullable<bool> SendEmail, out string PaymentMethodID)
+        {
+            srvStamp.AddUserPaymentMethodRequest inValue = new srvStamp.AddUserPaymentMethodRequest();
+            inValue.Item = Item;
+            inValue.MachineInfo = MachineInfo;
+            inValue.DefaultPaymentMethodType = DefaultPaymentMethodType;
+            inValue.Item1 = Item1;
+            inValue.SendEmail = SendEmail;
+            srvStamp.AddUserPaymentMethodResponse retVal = ((srvStamp.SwsimV135Soap)(this)).AddUserPaymentMethod(inValue);
+            PaymentMethodID = retVal.PaymentMethodID;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.AddUserPaymentMethodResponse> AddUserPaymentMethodAsync(srvStamp.AddUserPaymentMethodRequest request)
         {
             return base.Channel.AddUserPaymentMethodAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.AuthenticateBridgeAuthenticatorResponse> AuthenticateBridgeAuthenticatorAsync(svcStamp.AuthenticateBridgeAuthenticatorRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.AuthenticateBridgeAuthenticatorResponse srvStamp.SwsimV135Soap.AuthenticateBridgeAuthenticator(srvStamp.AuthenticateBridgeAuthenticatorRequest request)
+        {
+            return base.Channel.AuthenticateBridgeAuthenticator(request);
+        }
+        
+        public string AuthenticateBridgeAuthenticator(System.Guid integrationID, string batchAuthenticator, out bool Authenticated, out srvStamp.UserInfo AccountInfo)
+        {
+            srvStamp.AuthenticateBridgeAuthenticatorRequest inValue = new srvStamp.AuthenticateBridgeAuthenticatorRequest();
+            inValue.integrationID = integrationID;
+            inValue.batchAuthenticator = batchAuthenticator;
+            srvStamp.AuthenticateBridgeAuthenticatorResponse retVal = ((srvStamp.SwsimV135Soap)(this)).AuthenticateBridgeAuthenticator(inValue);
+            Authenticated = retVal.Authenticated;
+            AccountInfo = retVal.AccountInfo;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.AuthenticateBridgeAuthenticatorResponse> AuthenticateBridgeAuthenticatorAsync(srvStamp.AuthenticateBridgeAuthenticatorRequest request)
         {
             return base.Channel.AuthenticateBridgeAuthenticatorAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.AuthenticateUserResponse> AuthenticateUserAsync(svcStamp.AuthenticateUserRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.AuthenticateUserResponse srvStamp.SwsimV135Soap.AuthenticateUser(srvStamp.AuthenticateUserRequest request)
+        {
+            return base.Channel.AuthenticateUser(request);
+        }
+        
+        public string AuthenticateUser(srvStamp.Credentials Credentials, out System.DateTime LastLoginTime, out bool ClearCredential, out string LoginBannerText, out bool PasswordExpired, out bool CodewordsSet)
+        {
+            srvStamp.AuthenticateUserRequest inValue = new srvStamp.AuthenticateUserRequest();
+            inValue.Credentials = Credentials;
+            srvStamp.AuthenticateUserResponse retVal = ((srvStamp.SwsimV135Soap)(this)).AuthenticateUser(inValue);
+            LastLoginTime = retVal.LastLoginTime;
+            ClearCredential = retVal.ClearCredential;
+            LoginBannerText = retVal.LoginBannerText;
+            PasswordExpired = retVal.PasswordExpired;
+            CodewordsSet = retVal.CodewordsSet;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.AuthenticateUserResponse> AuthenticateUserAsync(srvStamp.AuthenticateUserRequest request)
         {
             return base.Channel.AuthenticateUserAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.AuthenticateWithTransferAuthenticatorResponse> AuthenticateWithTransferAuthenticatorAsync(svcStamp.AuthenticateWithTransferAuthenticatorRequest request)
+        public string AuthenticateWithTransferAuthenticator(System.Guid integrationID, string transferAuthenticator)
         {
-            return base.Channel.AuthenticateWithTransferAuthenticatorAsync(request);
+            return base.Channel.AuthenticateWithTransferAuthenticator(integrationID, transferAuthenticator);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CancelAccountResponse> CancelAccountAsync(svcStamp.CancelAccountRequest request)
+        public System.Threading.Tasks.Task<string> AuthenticateWithTransferAuthenticatorAsync(System.Guid integrationID, string transferAuthenticator)
+        {
+            return base.Channel.AuthenticateWithTransferAuthenticatorAsync(integrationID, transferAuthenticator);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CancelAccountResponse srvStamp.SwsimV135Soap.CancelAccount(srvStamp.CancelAccountRequest request)
+        {
+            return base.Channel.CancelAccount(request);
+        }
+        
+        public string CancelAccount(object Item, string Address, string State, string City, string Zip, bool SendEmail)
+        {
+            srvStamp.CancelAccountRequest inValue = new srvStamp.CancelAccountRequest();
+            inValue.Item = Item;
+            inValue.Address = Address;
+            inValue.State = State;
+            inValue.City = City;
+            inValue.Zip = Zip;
+            inValue.SendEmail = SendEmail;
+            srvStamp.CancelAccountResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CancelAccount(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.CancelAccountResponse> srvStamp.SwsimV135Soap.CancelAccountAsync(srvStamp.CancelAccountRequest request)
         {
             return base.Channel.CancelAccountAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CancelCarrierPickupResponse> CancelCarrierPickupAsync(svcStamp.CancelCarrierPickupRequest request)
+        public System.Threading.Tasks.Task<srvStamp.CancelAccountResponse> CancelAccountAsync(object Item, string Address, string State, string City, string Zip, bool SendEmail)
+        {
+            srvStamp.CancelAccountRequest inValue = new srvStamp.CancelAccountRequest();
+            inValue.Item = Item;
+            inValue.Address = Address;
+            inValue.State = State;
+            inValue.City = City;
+            inValue.Zip = Zip;
+            inValue.SendEmail = SendEmail;
+            return ((srvStamp.SwsimV135Soap)(this)).CancelAccountAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CancelCarrierPickupResponse srvStamp.SwsimV135Soap.CancelCarrierPickup(srvStamp.CancelCarrierPickupRequest request)
+        {
+            return base.Channel.CancelCarrierPickup(request);
+        }
+        
+        public string CancelCarrierPickup(object Item, string ConfirmationNumber, srvStamp.Carrier Carrier, srvStamp.CarrierPickupType PickupType, out string PickupStatus)
+        {
+            srvStamp.CancelCarrierPickupRequest inValue = new srvStamp.CancelCarrierPickupRequest();
+            inValue.Item = Item;
+            inValue.ConfirmationNumber = ConfirmationNumber;
+            inValue.Carrier = Carrier;
+            inValue.PickupType = PickupType;
+            srvStamp.CancelCarrierPickupResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CancelCarrierPickup(inValue);
+            PickupStatus = retVal.PickupStatus;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CancelCarrierPickupResponse> CancelCarrierPickupAsync(srvStamp.CancelCarrierPickupRequest request)
         {
             return base.Channel.CancelCarrierPickupAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CancelIndiciumResponse> CancelIndiciumAsync(svcStamp.CancelIndiciumRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CancelIndiciumResponse srvStamp.SwsimV135Soap.CancelIndicium(srvStamp.CancelIndiciumRequest request)
+        {
+            return base.Channel.CancelIndicium(request);
+        }
+        
+        public string CancelIndicium(object Item, object[] Items, System.Nullable<bool> SendEmail)
+        {
+            srvStamp.CancelIndiciumRequest inValue = new srvStamp.CancelIndiciumRequest();
+            inValue.Item = Item;
+            inValue.Items = Items;
+            inValue.SendEmail = SendEmail;
+            srvStamp.CancelIndiciumResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CancelIndicium(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.CancelIndiciumResponse> srvStamp.SwsimV135Soap.CancelIndiciumAsync(srvStamp.CancelIndiciumRequest request)
         {
             return base.Channel.CancelIndiciumAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ChangeDefaultPaymentMethodResponse> ChangeDefaultPaymentMethodAsync(svcStamp.ChangeDefaultPaymentMethodRequest request)
+        public System.Threading.Tasks.Task<srvStamp.CancelIndiciumResponse> CancelIndiciumAsync(object Item, object[] Items, System.Nullable<bool> SendEmail)
+        {
+            srvStamp.CancelIndiciumRequest inValue = new srvStamp.CancelIndiciumRequest();
+            inValue.Item = Item;
+            inValue.Items = Items;
+            inValue.SendEmail = SendEmail;
+            return ((srvStamp.SwsimV135Soap)(this)).CancelIndiciumAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ChangeDefaultPaymentMethodResponse srvStamp.SwsimV135Soap.ChangeDefaultPaymentMethod(srvStamp.ChangeDefaultPaymentMethodRequest request)
+        {
+            return base.Channel.ChangeDefaultPaymentMethod(request);
+        }
+        
+        public string ChangeDefaultPaymentMethod(object Item, srvStamp.MachineInfo MachineInfo, srvStamp.DefaultPaymentMethodTypeOptions PaymentType, string PaymentMethodID, System.Nullable<bool> SendEmail)
+        {
+            srvStamp.ChangeDefaultPaymentMethodRequest inValue = new srvStamp.ChangeDefaultPaymentMethodRequest();
+            inValue.Item = Item;
+            inValue.MachineInfo = MachineInfo;
+            inValue.PaymentType = PaymentType;
+            inValue.PaymentMethodID = PaymentMethodID;
+            inValue.SendEmail = SendEmail;
+            srvStamp.ChangeDefaultPaymentMethodResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ChangeDefaultPaymentMethod(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.ChangeDefaultPaymentMethodResponse> srvStamp.SwsimV135Soap.ChangeDefaultPaymentMethodAsync(srvStamp.ChangeDefaultPaymentMethodRequest request)
         {
             return base.Channel.ChangeDefaultPaymentMethodAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ChangePasswordResponse> ChangePasswordAsync(svcStamp.ChangePasswordRequest request)
+        public System.Threading.Tasks.Task<srvStamp.ChangeDefaultPaymentMethodResponse> ChangeDefaultPaymentMethodAsync(object Item, srvStamp.MachineInfo MachineInfo, srvStamp.DefaultPaymentMethodTypeOptions PaymentType, string PaymentMethodID, System.Nullable<bool> SendEmail)
+        {
+            srvStamp.ChangeDefaultPaymentMethodRequest inValue = new srvStamp.ChangeDefaultPaymentMethodRequest();
+            inValue.Item = Item;
+            inValue.MachineInfo = MachineInfo;
+            inValue.PaymentType = PaymentType;
+            inValue.PaymentMethodID = PaymentMethodID;
+            inValue.SendEmail = SendEmail;
+            return ((srvStamp.SwsimV135Soap)(this)).ChangeDefaultPaymentMethodAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ChangePasswordResponse srvStamp.SwsimV135Soap.ChangePassword(srvStamp.ChangePasswordRequest request)
+        {
+            return base.Channel.ChangePassword(request);
+        }
+        
+        public string ChangePassword(object Item, string OldPassword, string NewPassword)
+        {
+            srvStamp.ChangePasswordRequest inValue = new srvStamp.ChangePasswordRequest();
+            inValue.Item = Item;
+            inValue.OldPassword = OldPassword;
+            inValue.NewPassword = NewPassword;
+            srvStamp.ChangePasswordResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ChangePassword(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.ChangePasswordResponse> srvStamp.SwsimV135Soap.ChangePasswordAsync(srvStamp.ChangePasswordRequest request)
         {
             return base.Channel.ChangePasswordAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ChangePlanResponse> ChangePlanAsync(svcStamp.ChangePlanRequest request)
+        public System.Threading.Tasks.Task<srvStamp.ChangePasswordResponse> ChangePasswordAsync(object Item, string OldPassword, string NewPassword)
+        {
+            srvStamp.ChangePasswordRequest inValue = new srvStamp.ChangePasswordRequest();
+            inValue.Item = Item;
+            inValue.OldPassword = OldPassword;
+            inValue.NewPassword = NewPassword;
+            return ((srvStamp.SwsimV135Soap)(this)).ChangePasswordAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ChangePlanResponse srvStamp.SwsimV135Soap.ChangePlan(srvStamp.ChangePlanRequest request)
+        {
+            return base.Channel.ChangePlan(request);
+        }
+        
+        public string ChangePlan(object Item, int PlanId, string PromoCode, System.Nullable<bool> SendEmail, out srvStamp.PurchaseStatus PurchaseStatus, out int TransactionID, out string RejectionReason)
+        {
+            srvStamp.ChangePlanRequest inValue = new srvStamp.ChangePlanRequest();
+            inValue.Item = Item;
+            inValue.PlanId = PlanId;
+            inValue.PromoCode = PromoCode;
+            inValue.SendEmail = SendEmail;
+            srvStamp.ChangePlanResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ChangePlan(inValue);
+            PurchaseStatus = retVal.PurchaseStatus;
+            TransactionID = retVal.TransactionID;
+            RejectionReason = retVal.RejectionReason;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.ChangePlanResponse> ChangePlanAsync(srvStamp.ChangePlanRequest request)
         {
             return base.Channel.ChangePlanAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CheckCarrierPickupAvailabilityResponse> CheckCarrierPickupAvailabilityAsync(svcStamp.CheckCarrierPickupAvailabilityRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CheckCarrierPickupAvailabilityResponse srvStamp.SwsimV135Soap.CheckCarrierPickupAvailability(srvStamp.CheckCarrierPickupAvailabilityRequest request)
+        {
+            return base.Channel.CheckCarrierPickupAvailability(request);
+        }
+        
+        public string CheckCarrierPickupAvailability(object Item, System.DateTime Date, srvStamp.CarrierPickupAddress Address, srvStamp.Carrier Carrier, out string PickupDate, out string PickUpDayOfWeek, out decimal EstimatedAmount)
+        {
+            srvStamp.CheckCarrierPickupAvailabilityRequest inValue = new srvStamp.CheckCarrierPickupAvailabilityRequest();
+            inValue.Item = Item;
+            inValue.Date = Date;
+            inValue.Address = Address;
+            inValue.Carrier = Carrier;
+            srvStamp.CheckCarrierPickupAvailabilityResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CheckCarrierPickupAvailability(inValue);
+            PickupDate = retVal.PickupDate;
+            PickUpDayOfWeek = retVal.PickUpDayOfWeek;
+            EstimatedAmount = retVal.EstimatedAmount;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CheckCarrierPickupAvailabilityResponse> CheckCarrierPickupAvailabilityAsync(srvStamp.CheckCarrierPickupAvailabilityRequest request)
         {
             return base.Channel.CheckCarrierPickupAvailabilityAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CleanseAddressResponse> CleanseAddressAsync(svcStamp.CleanseAddressRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CleanseAddressResponse srvStamp.SwsimV135Soap.CleanseAddress(srvStamp.CleanseAddressRequest request)
+        {
+            return base.Channel.CleanseAddress(request);
+        }
+        
+        public string CleanseAddress(object Item, ref srvStamp.Address Address, string FromZIPCode, out bool AddressMatch, out bool CityStateZipOK, out srvStamp.ResidentialDeliveryIndicatorType ResidentialDeliveryIndicator, out System.Nullable<bool> IsPOBox, out srvStamp.Address[] CandidateAddresses, out srvStamp.StatusCodes StatusCodes, out srvStamp.RateV46[] Rates, out string AddressCleansingResult, out srvStamp.AddressVerificationLevel VerificationLevel)
+        {
+            srvStamp.CleanseAddressRequest inValue = new srvStamp.CleanseAddressRequest();
+            inValue.Item = Item;
+            inValue.Address = Address;
+            inValue.FromZIPCode = FromZIPCode;
+            srvStamp.CleanseAddressResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CleanseAddress(inValue);
+            Address = retVal.Address;
+            AddressMatch = retVal.AddressMatch;
+            CityStateZipOK = retVal.CityStateZipOK;
+            ResidentialDeliveryIndicator = retVal.ResidentialDeliveryIndicator;
+            IsPOBox = retVal.IsPOBox;
+            CandidateAddresses = retVal.CandidateAddresses;
+            StatusCodes = retVal.StatusCodes;
+            Rates = retVal.Rates;
+            AddressCleansingResult = retVal.AddressCleansingResult;
+            VerificationLevel = retVal.VerificationLevel;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CleanseAddressResponse> CleanseAddressAsync(srvStamp.CleanseAddressRequest request)
         {
             return base.Channel.CleanseAddressAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CreateBrandingResponse> CreateBrandingAsync(svcStamp.CreateBrandingRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CreateBrandingResponse srvStamp.SwsimV135Soap.CreateBranding(srvStamp.CreateBrandingRequest request)
+        {
+            return base.Channel.CreateBranding(request);
+        }
+        
+        public string CreateBranding(object Item, srvStamp.BrandingProperties BrandingProperties, string Reference, bool SetAsDefault, out System.Guid BrandingId)
+        {
+            srvStamp.CreateBrandingRequest inValue = new srvStamp.CreateBrandingRequest();
+            inValue.Item = Item;
+            inValue.BrandingProperties = BrandingProperties;
+            inValue.Reference = Reference;
+            inValue.SetAsDefault = SetAsDefault;
+            srvStamp.CreateBrandingResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CreateBranding(inValue);
+            BrandingId = retVal.BrandingId;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CreateBrandingResponse> CreateBrandingAsync(srvStamp.CreateBrandingRequest request)
         {
             return base.Channel.CreateBrandingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CreateManifestResponse> CreateManifestAsync(svcStamp.CreateManifestRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CreateManifestResponse srvStamp.SwsimV135Soap.CreateManifest(srvStamp.CreateManifestRequest request)
+        {
+            return base.Channel.CreateManifest(request);
+        }
+        
+        public string CreateManifest(object Item, ref string IntegratorTxID, System.Guid[] StampsTxIds, string[] TrackingNumbers, System.Nullable<System.DateTime> ShipDate, string PrintLayout, srvStamp.Address FromAddress, srvStamp.ImageType ImageType, bool PrintInstructions, srvStamp.ManifestType ManifestType, int NumberOfLabels, out srvStamp.EndOfDayManifest[] EndOfDayManifests)
+        {
+            srvStamp.CreateManifestRequest inValue = new srvStamp.CreateManifestRequest();
+            inValue.Item = Item;
+            inValue.IntegratorTxID = IntegratorTxID;
+            inValue.StampsTxIds = StampsTxIds;
+            inValue.TrackingNumbers = TrackingNumbers;
+            inValue.ShipDate = ShipDate;
+            inValue.PrintLayout = PrintLayout;
+            inValue.FromAddress = FromAddress;
+            inValue.ImageType = ImageType;
+            inValue.PrintInstructions = PrintInstructions;
+            inValue.ManifestType = ManifestType;
+            inValue.NumberOfLabels = NumberOfLabels;
+            srvStamp.CreateManifestResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CreateManifest(inValue);
+            IntegratorTxID = retVal.IntegratorTxID;
+            EndOfDayManifests = retVal.EndOfDayManifests;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CreateManifestResponse> CreateManifestAsync(srvStamp.CreateManifestRequest request)
         {
             return base.Channel.CreateManifestAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CreateNotificationSettingResponse> CreateNotificationSettingAsync(svcStamp.CreateNotificationSettingRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CreateNotificationSettingResponse srvStamp.SwsimV135Soap.CreateNotificationSetting(srvStamp.CreateNotificationSettingRequest request)
+        {
+            return base.Channel.CreateNotificationSetting(request);
+        }
+        
+        public string CreateNotificationSetting(object Item, srvStamp.NotificationSettingProperties NotificationSettingProperties, string Reference, bool SetAsDefault, out System.Guid NotificationSettingId)
+        {
+            srvStamp.CreateNotificationSettingRequest inValue = new srvStamp.CreateNotificationSettingRequest();
+            inValue.Item = Item;
+            inValue.NotificationSettingProperties = NotificationSettingProperties;
+            inValue.Reference = Reference;
+            inValue.SetAsDefault = SetAsDefault;
+            srvStamp.CreateNotificationSettingResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CreateNotificationSetting(inValue);
+            NotificationSettingId = retVal.NotificationSettingId;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CreateNotificationSettingResponse> CreateNotificationSettingAsync(srvStamp.CreateNotificationSettingRequest request)
         {
             return base.Channel.CreateNotificationSettingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.CreateShipmentNotificationResponse> CreateShipmentNotificationAsync(svcStamp.CreateShipmentNotificationRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.CreateShipmentNotificationResponse srvStamp.SwsimV135Soap.CreateShipmentNotification(srvStamp.CreateShipmentNotificationRequest request)
+        {
+            return base.Channel.CreateShipmentNotification(request);
+        }
+        
+        public string CreateShipmentNotification(object Item, string TrackingNumber, string Carrier, double WeightLb, double WeightOz, string TrackingType, System.Nullable<System.Guid> BrandingId, System.Nullable<System.Guid> NotificationSettingId, string EmailSenderName, srvStamp.Address From, srvStamp.Address To, srvStamp.OrderDetails OrderDetails, System.DateTime ShipDate, bool SendEmail, out string TrackingUrl)
+        {
+            srvStamp.CreateShipmentNotificationRequest inValue = new srvStamp.CreateShipmentNotificationRequest();
+            inValue.Item = Item;
+            inValue.TrackingNumber = TrackingNumber;
+            inValue.Carrier = Carrier;
+            inValue.WeightLb = WeightLb;
+            inValue.WeightOz = WeightOz;
+            inValue.TrackingType = TrackingType;
+            inValue.BrandingId = BrandingId;
+            inValue.NotificationSettingId = NotificationSettingId;
+            inValue.EmailSenderName = EmailSenderName;
+            inValue.From = From;
+            inValue.To = To;
+            inValue.OrderDetails = OrderDetails;
+            inValue.ShipDate = ShipDate;
+            inValue.SendEmail = SendEmail;
+            srvStamp.CreateShipmentNotificationResponse retVal = ((srvStamp.SwsimV135Soap)(this)).CreateShipmentNotification(inValue);
+            TrackingUrl = retVal.TrackingUrl;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.CreateShipmentNotificationResponse> CreateShipmentNotificationAsync(srvStamp.CreateShipmentNotificationRequest request)
         {
             return base.Channel.CreateShipmentNotificationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.DeleteBrandingResponse> DeleteBrandingAsync(svcStamp.DeleteBrandingRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.DeleteBrandingResponse srvStamp.SwsimV135Soap.DeleteBranding(srvStamp.DeleteBrandingRequest request)
+        {
+            return base.Channel.DeleteBranding(request);
+        }
+        
+        public string DeleteBranding(object Item, System.Guid BrandingId)
+        {
+            srvStamp.DeleteBrandingRequest inValue = new srvStamp.DeleteBrandingRequest();
+            inValue.Item = Item;
+            inValue.BrandingId = BrandingId;
+            srvStamp.DeleteBrandingResponse retVal = ((srvStamp.SwsimV135Soap)(this)).DeleteBranding(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.DeleteBrandingResponse> srvStamp.SwsimV135Soap.DeleteBrandingAsync(srvStamp.DeleteBrandingRequest request)
         {
             return base.Channel.DeleteBrandingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.DeleteCarrierResponse> DeleteCarrierAsync(svcStamp.DeleteCarrierRequest request)
+        public System.Threading.Tasks.Task<srvStamp.DeleteBrandingResponse> DeleteBrandingAsync(object Item, System.Guid BrandingId)
+        {
+            srvStamp.DeleteBrandingRequest inValue = new srvStamp.DeleteBrandingRequest();
+            inValue.Item = Item;
+            inValue.BrandingId = BrandingId;
+            return ((srvStamp.SwsimV135Soap)(this)).DeleteBrandingAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.DeleteCarrierResponse srvStamp.SwsimV135Soap.DeleteCarrier(srvStamp.DeleteCarrierRequest request)
+        {
+            return base.Channel.DeleteCarrier(request);
+        }
+        
+        public string DeleteCarrier(object Item, srvStamp.Carrier Carrier)
+        {
+            srvStamp.DeleteCarrierRequest inValue = new srvStamp.DeleteCarrierRequest();
+            inValue.Item = Item;
+            inValue.Carrier = Carrier;
+            srvStamp.DeleteCarrierResponse retVal = ((srvStamp.SwsimV135Soap)(this)).DeleteCarrier(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.DeleteCarrierResponse> srvStamp.SwsimV135Soap.DeleteCarrierAsync(srvStamp.DeleteCarrierRequest request)
         {
             return base.Channel.DeleteCarrierAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.DeleteImageResponse> DeleteImageAsync(svcStamp.DeleteImageRequest request)
+        public System.Threading.Tasks.Task<srvStamp.DeleteCarrierResponse> DeleteCarrierAsync(object Item, srvStamp.Carrier Carrier)
+        {
+            srvStamp.DeleteCarrierRequest inValue = new srvStamp.DeleteCarrierRequest();
+            inValue.Item = Item;
+            inValue.Carrier = Carrier;
+            return ((srvStamp.SwsimV135Soap)(this)).DeleteCarrierAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.DeleteImageResponse srvStamp.SwsimV135Soap.DeleteImage(srvStamp.DeleteImageRequest request)
+        {
+            return base.Channel.DeleteImage(request);
+        }
+        
+        public string DeleteImage(object Item, int ImageId)
+        {
+            srvStamp.DeleteImageRequest inValue = new srvStamp.DeleteImageRequest();
+            inValue.Item = Item;
+            inValue.ImageId = ImageId;
+            srvStamp.DeleteImageResponse retVal = ((srvStamp.SwsimV135Soap)(this)).DeleteImage(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.DeleteImageResponse> srvStamp.SwsimV135Soap.DeleteImageAsync(srvStamp.DeleteImageRequest request)
         {
             return base.Channel.DeleteImageAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.DeleteNotificationSettingResponse> DeleteNotificationSettingAsync(svcStamp.DeleteNotificationSettingRequest request)
+        public System.Threading.Tasks.Task<srvStamp.DeleteImageResponse> DeleteImageAsync(object Item, int ImageId)
+        {
+            srvStamp.DeleteImageRequest inValue = new srvStamp.DeleteImageRequest();
+            inValue.Item = Item;
+            inValue.ImageId = ImageId;
+            return ((srvStamp.SwsimV135Soap)(this)).DeleteImageAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.DeleteNotificationSettingResponse srvStamp.SwsimV135Soap.DeleteNotificationSetting(srvStamp.DeleteNotificationSettingRequest request)
+        {
+            return base.Channel.DeleteNotificationSetting(request);
+        }
+        
+        public string DeleteNotificationSetting(object Item, System.Guid NotificationSettingId)
+        {
+            srvStamp.DeleteNotificationSettingRequest inValue = new srvStamp.DeleteNotificationSettingRequest();
+            inValue.Item = Item;
+            inValue.NotificationSettingId = NotificationSettingId;
+            srvStamp.DeleteNotificationSettingResponse retVal = ((srvStamp.SwsimV135Soap)(this)).DeleteNotificationSetting(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.DeleteNotificationSettingResponse> srvStamp.SwsimV135Soap.DeleteNotificationSettingAsync(srvStamp.DeleteNotificationSettingRequest request)
         {
             return base.Channel.DeleteNotificationSettingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.DeleteUserPaymentMethodResponse> DeleteUserPaymentMethodAsync(svcStamp.DeleteUserPaymentMethodRequest request)
+        public System.Threading.Tasks.Task<srvStamp.DeleteNotificationSettingResponse> DeleteNotificationSettingAsync(object Item, System.Guid NotificationSettingId)
+        {
+            srvStamp.DeleteNotificationSettingRequest inValue = new srvStamp.DeleteNotificationSettingRequest();
+            inValue.Item = Item;
+            inValue.NotificationSettingId = NotificationSettingId;
+            return ((srvStamp.SwsimV135Soap)(this)).DeleteNotificationSettingAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.DeleteUserPaymentMethodResponse srvStamp.SwsimV135Soap.DeleteUserPaymentMethod(srvStamp.DeleteUserPaymentMethodRequest request)
+        {
+            return base.Channel.DeleteUserPaymentMethod(request);
+        }
+        
+        public string DeleteUserPaymentMethod(object Item, string PaymentMethodID)
+        {
+            srvStamp.DeleteUserPaymentMethodRequest inValue = new srvStamp.DeleteUserPaymentMethodRequest();
+            inValue.Item = Item;
+            inValue.PaymentMethodID = PaymentMethodID;
+            srvStamp.DeleteUserPaymentMethodResponse retVal = ((srvStamp.SwsimV135Soap)(this)).DeleteUserPaymentMethod(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.DeleteUserPaymentMethodResponse> srvStamp.SwsimV135Soap.DeleteUserPaymentMethodAsync(srvStamp.DeleteUserPaymentMethodRequest request)
         {
             return base.Channel.DeleteUserPaymentMethodAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.EnumCodeWordTypesResponse> EnumCodeWordTypesAsync(svcStamp.EnumCodeWordTypesRequest request)
+        public System.Threading.Tasks.Task<srvStamp.DeleteUserPaymentMethodResponse> DeleteUserPaymentMethodAsync(object Item, string PaymentMethodID)
+        {
+            srvStamp.DeleteUserPaymentMethodRequest inValue = new srvStamp.DeleteUserPaymentMethodRequest();
+            inValue.Item = Item;
+            inValue.PaymentMethodID = PaymentMethodID;
+            return ((srvStamp.SwsimV135Soap)(this)).DeleteUserPaymentMethodAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.EnumCodeWordTypesResponse srvStamp.SwsimV135Soap.EnumCodeWordTypes(srvStamp.EnumCodeWordTypesRequest request)
+        {
+            return base.Channel.EnumCodeWordTypes(request);
+        }
+        
+        public srvStamp.Codeword[] EnumCodeWordTypes()
+        {
+            srvStamp.EnumCodeWordTypesRequest inValue = new srvStamp.EnumCodeWordTypesRequest();
+            srvStamp.EnumCodeWordTypesResponse retVal = ((srvStamp.SwsimV135Soap)(this)).EnumCodeWordTypes(inValue);
+            return retVal.CodeWords;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.EnumCodeWordTypesResponse> srvStamp.SwsimV135Soap.EnumCodeWordTypesAsync(srvStamp.EnumCodeWordTypesRequest request)
         {
             return base.Channel.EnumCodeWordTypesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.EnumCostCodesResponse> EnumCostCodesAsync(svcStamp.EnumCostCodesRequest request)
+        public System.Threading.Tasks.Task<srvStamp.EnumCodeWordTypesResponse> EnumCodeWordTypesAsync()
+        {
+            srvStamp.EnumCodeWordTypesRequest inValue = new srvStamp.EnumCodeWordTypesRequest();
+            return ((srvStamp.SwsimV135Soap)(this)).EnumCodeWordTypesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.EnumCostCodesResponse srvStamp.SwsimV135Soap.EnumCostCodes(srvStamp.EnumCostCodesRequest request)
+        {
+            return base.Channel.EnumCostCodes(request);
+        }
+        
+        public string EnumCostCodes(object Item, out srvStamp.cost_code_info_v1[] CostCodes)
+        {
+            srvStamp.EnumCostCodesRequest inValue = new srvStamp.EnumCostCodesRequest();
+            inValue.Item = Item;
+            srvStamp.EnumCostCodesResponse retVal = ((srvStamp.SwsimV135Soap)(this)).EnumCostCodes(inValue);
+            CostCodes = retVal.CostCodes;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.EnumCostCodesResponse> EnumCostCodesAsync(srvStamp.EnumCostCodesRequest request)
         {
             return base.Channel.EnumCostCodesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.EnumNetStampsLayoutsResponse> EnumNetStampsLayoutsAsync(svcStamp.EnumNetStampsLayoutsRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.EnumNetStampsLayoutsResponse srvStamp.SwsimV135Soap.EnumNetStampsLayouts(srvStamp.EnumNetStampsLayoutsRequest request)
+        {
+            return base.Channel.EnumNetStampsLayouts(request);
+        }
+        
+        public string EnumNetStampsLayouts(object Item, out srvStamp.NetStampsLayout[] Layouts)
+        {
+            srvStamp.EnumNetStampsLayoutsRequest inValue = new srvStamp.EnumNetStampsLayoutsRequest();
+            inValue.Item = Item;
+            srvStamp.EnumNetStampsLayoutsResponse retVal = ((srvStamp.SwsimV135Soap)(this)).EnumNetStampsLayouts(inValue);
+            Layouts = retVal.Layouts;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.EnumNetStampsLayoutsResponse> EnumNetStampsLayoutsAsync(srvStamp.EnumNetStampsLayoutsRequest request)
         {
             return base.Channel.EnumNetStampsLayoutsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.FinishAccountVerificationResponse> FinishAccountVerificationAsync(svcStamp.FinishAccountVerificationRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.FinishAccountVerificationResponse srvStamp.SwsimV135Soap.FinishAccountVerification(srvStamp.FinishAccountVerificationRequest request)
+        {
+            return base.Channel.FinishAccountVerification(request);
+        }
+        
+        public string FinishAccountVerification(object Item, string PhoneVerificationCode)
+        {
+            srvStamp.FinishAccountVerificationRequest inValue = new srvStamp.FinishAccountVerificationRequest();
+            inValue.Item = Item;
+            inValue.PhoneVerificationCode = PhoneVerificationCode;
+            srvStamp.FinishAccountVerificationResponse retVal = ((srvStamp.SwsimV135Soap)(this)).FinishAccountVerification(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.FinishAccountVerificationResponse> srvStamp.SwsimV135Soap.FinishAccountVerificationAsync(srvStamp.FinishAccountVerificationRequest request)
         {
             return base.Channel.FinishAccountVerificationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.FinishPasswordResetResponse> FinishPasswordResetAsync(svcStamp.FinishPasswordResetRequest request)
+        public System.Threading.Tasks.Task<srvStamp.FinishAccountVerificationResponse> FinishAccountVerificationAsync(object Item, string PhoneVerificationCode)
         {
-            return base.Channel.FinishPasswordResetAsync(request);
+            srvStamp.FinishAccountVerificationRequest inValue = new srvStamp.FinishAccountVerificationRequest();
+            inValue.Item = Item;
+            inValue.PhoneVerificationCode = PhoneVerificationCode;
+            return ((srvStamp.SwsimV135Soap)(this)).FinishAccountVerificationAsync(inValue);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetAccountInfoResponse> GetAccountInfoAsync(svcStamp.GetAccountInfoRequest request)
+        public void FinishPasswordReset(string Username, string TempPassword, string NewPassword, System.Guid IntegrationId)
+        {
+            base.Channel.FinishPasswordReset(Username, TempPassword, NewPassword, IntegrationId);
+        }
+        
+        public System.Threading.Tasks.Task FinishPasswordResetAsync(string Username, string TempPassword, string NewPassword, System.Guid IntegrationId)
+        {
+            return base.Channel.FinishPasswordResetAsync(Username, TempPassword, NewPassword, IntegrationId);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetAccountInfoResponse srvStamp.SwsimV135Soap.GetAccountInfo(srvStamp.GetAccountInfoRequest request)
+        {
+            return base.Channel.GetAccountInfo(request);
+        }
+        
+        public string GetAccountInfo(object Item, out srvStamp.AccountInfoV65 AccountInfo, out srvStamp.Address Address, out string CustomerEmail, out string AccountStatus, out srvStamp.DateAdvance DateAdvanceConfig, out string VerificationPhoneNumber, out string VerificationPhoneExtension)
+        {
+            srvStamp.GetAccountInfoRequest inValue = new srvStamp.GetAccountInfoRequest();
+            inValue.Item = Item;
+            srvStamp.GetAccountInfoResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetAccountInfo(inValue);
+            AccountInfo = retVal.AccountInfo;
+            Address = retVal.Address;
+            CustomerEmail = retVal.CustomerEmail;
+            AccountStatus = retVal.AccountStatus;
+            DateAdvanceConfig = retVal.DateAdvanceConfig;
+            VerificationPhoneNumber = retVal.VerificationPhoneNumber;
+            VerificationPhoneExtension = retVal.VerificationPhoneExtension;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetAccountInfoResponse> GetAccountInfoAsync(srvStamp.GetAccountInfoRequest request)
         {
             return base.Channel.GetAccountInfoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetBalanceHistoryResponse> GetBalanceHistoryAsync(svcStamp.GetBalanceHistoryRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetBalanceHistoryResponse srvStamp.SwsimV135Soap.GetBalanceHistory(srvStamp.GetBalanceHistoryRequest request)
+        {
+            return base.Channel.GetBalanceHistory(request);
+        }
+        
+        public string GetBalanceHistory(object Item, System.Nullable<int> TransactionsPerPage, System.DateTime TransactionDateMin, System.Nullable<System.DateTime> TransactionDateMax, srvStamp.TransactionType[] Filters, out string BalanceHistoryToken, out int TotalTransactions, out int TotalPages, out srvStamp.Transaction[] Transactions)
+        {
+            srvStamp.GetBalanceHistoryRequest inValue = new srvStamp.GetBalanceHistoryRequest();
+            inValue.Item = Item;
+            inValue.TransactionsPerPage = TransactionsPerPage;
+            inValue.TransactionDateMin = TransactionDateMin;
+            inValue.TransactionDateMax = TransactionDateMax;
+            inValue.Filters = Filters;
+            srvStamp.GetBalanceHistoryResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetBalanceHistory(inValue);
+            BalanceHistoryToken = retVal.BalanceHistoryToken;
+            TotalTransactions = retVal.TotalTransactions;
+            TotalPages = retVal.TotalPages;
+            Transactions = retVal.Transactions;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetBalanceHistoryResponse> GetBalanceHistoryAsync(srvStamp.GetBalanceHistoryRequest request)
         {
             return base.Channel.GetBalanceHistoryAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetBalanceHistoryByTokenResponse> GetBalanceHistoryByTokenAsync(svcStamp.GetBalanceHistoryByTokenRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetBalanceHistoryByTokenResponse srvStamp.SwsimV135Soap.GetBalanceHistoryByToken(srvStamp.GetBalanceHistoryByTokenRequest request)
+        {
+            return base.Channel.GetBalanceHistoryByToken(request);
+        }
+        
+        public string GetBalanceHistoryByToken(object Item, ref string BalanceHistoryToken, int PageNumber, out int TransactionsPerPage, out int TotalTransactions, out srvStamp.Transaction[] Transactions)
+        {
+            srvStamp.GetBalanceHistoryByTokenRequest inValue = new srvStamp.GetBalanceHistoryByTokenRequest();
+            inValue.Item = Item;
+            inValue.BalanceHistoryToken = BalanceHistoryToken;
+            inValue.PageNumber = PageNumber;
+            srvStamp.GetBalanceHistoryByTokenResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetBalanceHistoryByToken(inValue);
+            BalanceHistoryToken = retVal.BalanceHistoryToken;
+            TransactionsPerPage = retVal.TransactionsPerPage;
+            TotalTransactions = retVal.TotalTransactions;
+            Transactions = retVal.Transactions;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetBalanceHistoryByTokenResponse> GetBalanceHistoryByTokenAsync(srvStamp.GetBalanceHistoryByTokenRequest request)
         {
             return base.Channel.GetBalanceHistoryByTokenAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetBrandingResponse> GetBrandingAsync(svcStamp.GetBrandingRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetBrandingResponse srvStamp.SwsimV135Soap.GetBranding(srvStamp.GetBrandingRequest request)
+        {
+            return base.Channel.GetBranding(request);
+        }
+        
+        public string GetBranding(object Item, out srvStamp.Branding[] Brandings, out System.Nullable<System.Guid> defaultBrandingId)
+        {
+            srvStamp.GetBrandingRequest inValue = new srvStamp.GetBrandingRequest();
+            inValue.Item = Item;
+            srvStamp.GetBrandingResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetBranding(inValue);
+            Brandings = retVal.Brandings;
+            defaultBrandingId = retVal.defaultBrandingId;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetBrandingResponse> GetBrandingAsync(srvStamp.GetBrandingRequest request)
         {
             return base.Channel.GetBrandingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetCarrierPickupListResponse> GetCarrierPickupListAsync(svcStamp.GetCarrierPickupListRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetCarrierPickupListResponse srvStamp.SwsimV135Soap.GetCarrierPickupList(srvStamp.GetCarrierPickupListRequest request)
+        {
+            return base.Channel.GetCarrierPickupList(request);
+        }
+        
+        public string GetCarrierPickupList(object Item, out srvStamp.CarrierPickupInformation[] Pickups)
+        {
+            srvStamp.GetCarrierPickupListRequest inValue = new srvStamp.GetCarrierPickupListRequest();
+            inValue.Item = Item;
+            srvStamp.GetCarrierPickupListResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetCarrierPickupList(inValue);
+            Pickups = retVal.Pickups;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetCarrierPickupListResponse> GetCarrierPickupListAsync(srvStamp.GetCarrierPickupListRequest request)
         {
             return base.Channel.GetCarrierPickupListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetChangePlanStatusResponse> GetChangePlanStatusAsync(svcStamp.GetChangePlanStatusRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetChangePlanStatusResponse srvStamp.SwsimV135Soap.GetChangePlanStatus(srvStamp.GetChangePlanStatusRequest request)
+        {
+            return base.Channel.GetChangePlanStatus(request);
+        }
+        
+        public string GetChangePlanStatus(object Item, int TransactionID, out srvStamp.PurchaseStatus PurchaseStatus, out string RejectionReason)
+        {
+            srvStamp.GetChangePlanStatusRequest inValue = new srvStamp.GetChangePlanStatusRequest();
+            inValue.Item = Item;
+            inValue.TransactionID = TransactionID;
+            srvStamp.GetChangePlanStatusResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetChangePlanStatus(inValue);
+            PurchaseStatus = retVal.PurchaseStatus;
+            RejectionReason = retVal.RejectionReason;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetChangePlanStatusResponse> GetChangePlanStatusAsync(srvStamp.GetChangePlanStatusRequest request)
         {
             return base.Channel.GetChangePlanStatusAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetCodewordQuestionsResponse> GetCodewordQuestionsAsync(svcStamp.GetCodewordQuestionsRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetCodewordQuestionsResponse srvStamp.SwsimV135Soap.GetCodewordQuestions(srvStamp.GetCodewordQuestionsRequest request)
+        {
+            return base.Channel.GetCodewordQuestions(request);
+        }
+        
+        public string GetCodewordQuestions(string Username, System.Guid IntegrationId, out string Codeword2Question)
+        {
+            srvStamp.GetCodewordQuestionsRequest inValue = new srvStamp.GetCodewordQuestionsRequest();
+            inValue.Username = Username;
+            inValue.IntegrationId = IntegrationId;
+            srvStamp.GetCodewordQuestionsResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetCodewordQuestions(inValue);
+            Codeword2Question = retVal.Codeword2Question;
+            return retVal.Codeword1Question;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetCodewordQuestionsResponse> GetCodewordQuestionsAsync(srvStamp.GetCodewordQuestionsRequest request)
         {
             return base.Channel.GetCodewordQuestionsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetImageListResponse> GetImageListAsync(svcStamp.GetImageListRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetImageListResponse srvStamp.SwsimV135Soap.GetImageList(srvStamp.GetImageListRequest request)
+        {
+            return base.Channel.GetImageList(request);
+        }
+        
+        public string GetImageList(object Item, out srvStamp.Image[] Images)
+        {
+            srvStamp.GetImageListRequest inValue = new srvStamp.GetImageListRequest();
+            inValue.Item = Item;
+            srvStamp.GetImageListResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetImageList(inValue);
+            Images = retVal.Images;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetImageListResponse> GetImageListAsync(srvStamp.GetImageListRequest request)
         {
             return base.Channel.GetImageListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetNetStampsImagesResponse> GetNetStampsImagesAsync(svcStamp.GetNetStampsImagesRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetNetStampsImagesResponse srvStamp.SwsimV135Soap.GetNetStampsImages(srvStamp.GetNetStampsImagesRequest request)
+        {
+            return base.Channel.GetNetStampsImages(request);
+        }
+        
+        public string GetNetStampsImages(object Item, out srvStamp.NetStampsImage[] NetStampsImages)
+        {
+            srvStamp.GetNetStampsImagesRequest inValue = new srvStamp.GetNetStampsImagesRequest();
+            inValue.Item = Item;
+            srvStamp.GetNetStampsImagesResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetNetStampsImages(inValue);
+            NetStampsImages = retVal.NetStampsImages;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetNetStampsImagesResponse> GetNetStampsImagesAsync(srvStamp.GetNetStampsImagesRequest request)
         {
             return base.Channel.GetNetStampsImagesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetNotificationSettingsResponse> GetNotificationSettingsAsync(svcStamp.GetNotificationSettingsRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetNotificationSettingsResponse srvStamp.SwsimV135Soap.GetNotificationSettings(srvStamp.GetNotificationSettingsRequest request)
+        {
+            return base.Channel.GetNotificationSettings(request);
+        }
+        
+        public string GetNotificationSettings(object Item, out System.Nullable<System.Guid> DefaultNotificationSettingId, out srvStamp.NotificationSetting[] NotificationSettings)
+        {
+            srvStamp.GetNotificationSettingsRequest inValue = new srvStamp.GetNotificationSettingsRequest();
+            inValue.Item = Item;
+            srvStamp.GetNotificationSettingsResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetNotificationSettings(inValue);
+            DefaultNotificationSettingId = retVal.DefaultNotificationSettingId;
+            NotificationSettings = retVal.NotificationSettings;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetNotificationSettingsResponse> GetNotificationSettingsAsync(srvStamp.GetNotificationSettingsRequest request)
         {
             return base.Channel.GetNotificationSettingsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetShipmentListResponse> GetShipmentListAsync(svcStamp.GetShipmentListRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetShipmentListResponse srvStamp.SwsimV135Soap.GetShipmentList(srvStamp.GetShipmentListRequest request)
+        {
+            return base.Channel.GetShipmentList(request);
+        }
+        
+        public string GetShipmentList(object Item, string ShipmentsPerPage, srvStamp.Filters Filters, srvStamp.IncludeField[] IncludeFields, out string ShipmentListToken, out int TotalPages, out srvStamp.ShipmentV39[] Shipments)
+        {
+            srvStamp.GetShipmentListRequest inValue = new srvStamp.GetShipmentListRequest();
+            inValue.Item = Item;
+            inValue.ShipmentsPerPage = ShipmentsPerPage;
+            inValue.Filters = Filters;
+            inValue.IncludeFields = IncludeFields;
+            srvStamp.GetShipmentListResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetShipmentList(inValue);
+            ShipmentListToken = retVal.ShipmentListToken;
+            TotalPages = retVal.TotalPages;
+            Shipments = retVal.Shipments;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetShipmentListResponse> GetShipmentListAsync(srvStamp.GetShipmentListRequest request)
         {
             return base.Channel.GetShipmentListAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetShipmentListByTokenResponse> GetShipmentListByTokenAsync(svcStamp.GetShipmentListByTokenRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetShipmentListByTokenResponse srvStamp.SwsimV135Soap.GetShipmentListByToken(srvStamp.GetShipmentListByTokenRequest request)
+        {
+            return base.Channel.GetShipmentListByToken(request);
+        }
+        
+        public string GetShipmentListByToken(object Item, ref string ShipmentListToken, int PageNumber, out int ShipmentsPerPage, out int TotalPages, out srvStamp.ShipmentV39[] Shipments)
+        {
+            srvStamp.GetShipmentListByTokenRequest inValue = new srvStamp.GetShipmentListByTokenRequest();
+            inValue.Item = Item;
+            inValue.ShipmentListToken = ShipmentListToken;
+            inValue.PageNumber = PageNumber;
+            srvStamp.GetShipmentListByTokenResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetShipmentListByToken(inValue);
+            ShipmentListToken = retVal.ShipmentListToken;
+            ShipmentsPerPage = retVal.ShipmentsPerPage;
+            TotalPages = retVal.TotalPages;
+            Shipments = retVal.Shipments;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetShipmentListByTokenResponse> GetShipmentListByTokenAsync(srvStamp.GetShipmentListByTokenRequest request)
         {
             return base.Channel.GetShipmentListByTokenAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetSupportedCountriesResponse> GetSupportedCountriesAsync(svcStamp.GetSupportedCountriesRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetSupportedCountriesResponse srvStamp.SwsimV135Soap.GetSupportedCountries(srvStamp.GetSupportedCountriesRequest request)
+        {
+            return base.Channel.GetSupportedCountries(request);
+        }
+        
+        public string GetSupportedCountries(object Item, out srvStamp.CountryInfo[] CountryInfo)
+        {
+            srvStamp.GetSupportedCountriesRequest inValue = new srvStamp.GetSupportedCountriesRequest();
+            inValue.Item = Item;
+            srvStamp.GetSupportedCountriesResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetSupportedCountries(inValue);
+            CountryInfo = retVal.CountryInfo;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetSupportedCountriesResponse> GetSupportedCountriesAsync(srvStamp.GetSupportedCountriesRequest request)
         {
             return base.Channel.GetSupportedCountriesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.GetURLResponse> GetURLAsync(svcStamp.GetURLRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.GetURLResponse srvStamp.SwsimV135Soap.GetURL(srvStamp.GetURLRequest request)
+        {
+            return base.Channel.GetURL(request);
+        }
+        
+        public string GetURL(object Item, srvStamp.UrlType URLType, string ApplicationContext, out string URL, out string PPLSessionRequestID)
+        {
+            srvStamp.GetURLRequest inValue = new srvStamp.GetURLRequest();
+            inValue.Item = Item;
+            inValue.URLType = URLType;
+            inValue.ApplicationContext = ApplicationContext;
+            srvStamp.GetURLResponse retVal = ((srvStamp.SwsimV135Soap)(this)).GetURL(inValue);
+            URL = retVal.URL;
+            PPLSessionRequestID = retVal.PPLSessionRequestID;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.GetURLResponse> GetURLAsync(srvStamp.GetURLRequest request)
         {
             return base.Channel.GetURLAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ListPaymentMethodsResponse> ListPaymentMethodsAsync(svcStamp.ListPaymentMethodsRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ListPaymentMethodsResponse srvStamp.SwsimV135Soap.ListPaymentMethods(srvStamp.ListPaymentMethodsRequest request)
+        {
+            return base.Channel.ListPaymentMethods(request);
+        }
+        
+        public string ListPaymentMethods(object Item, string PaymentMethodID, out srvStamp.PaymentMethod[] PaymentMethods)
+        {
+            srvStamp.ListPaymentMethodsRequest inValue = new srvStamp.ListPaymentMethodsRequest();
+            inValue.Item = Item;
+            inValue.PaymentMethodID = PaymentMethodID;
+            srvStamp.ListPaymentMethodsResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ListPaymentMethods(inValue);
+            PaymentMethods = retVal.PaymentMethods;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.ListPaymentMethodsResponse> ListPaymentMethodsAsync(srvStamp.ListPaymentMethodsRequest request)
         {
             return base.Channel.ListPaymentMethodsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ModifyBrandingResponse> ModifyBrandingAsync(svcStamp.ModifyBrandingRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ModifyBrandingResponse srvStamp.SwsimV135Soap.ModifyBranding(srvStamp.ModifyBrandingRequest request)
+        {
+            return base.Channel.ModifyBranding(request);
+        }
+        
+        public string ModifyBranding(object Item, srvStamp.Branding Branding, bool SetAsDefault)
+        {
+            srvStamp.ModifyBrandingRequest inValue = new srvStamp.ModifyBrandingRequest();
+            inValue.Item = Item;
+            inValue.Branding = Branding;
+            inValue.SetAsDefault = SetAsDefault;
+            srvStamp.ModifyBrandingResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ModifyBranding(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.ModifyBrandingResponse> srvStamp.SwsimV135Soap.ModifyBrandingAsync(srvStamp.ModifyBrandingRequest request)
         {
             return base.Channel.ModifyBrandingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ModifyCarrierPickupResponse> ModifyCarrierPickupAsync(svcStamp.ModifyCarrierPickupRequest request)
+        public System.Threading.Tasks.Task<srvStamp.ModifyBrandingResponse> ModifyBrandingAsync(object Item, srvStamp.Branding Branding, bool SetAsDefault)
+        {
+            srvStamp.ModifyBrandingRequest inValue = new srvStamp.ModifyBrandingRequest();
+            inValue.Item = Item;
+            inValue.Branding = Branding;
+            inValue.SetAsDefault = SetAsDefault;
+            return ((srvStamp.SwsimV135Soap)(this)).ModifyBrandingAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ModifyCarrierPickupResponse srvStamp.SwsimV135Soap.ModifyCarrierPickup(srvStamp.ModifyCarrierPickupRequest request)
+        {
+            return base.Channel.ModifyCarrierPickup(request);
+        }
+        
+        public string ModifyCarrierPickup(object Item, srvStamp.CarrierPickupContactInformation ContactInformation, srvStamp.CarrierPickupPackageInformation PackageInformation, ref string ConfirmationNumber, srvStamp.Carrier Carrier, srvStamp.CarrierPickupType PickupType, out string PickupDate, out string PickUpDayOfWeek, out string PickupStatus)
+        {
+            srvStamp.ModifyCarrierPickupRequest inValue = new srvStamp.ModifyCarrierPickupRequest();
+            inValue.Item = Item;
+            inValue.ContactInformation = ContactInformation;
+            inValue.PackageInformation = PackageInformation;
+            inValue.ConfirmationNumber = ConfirmationNumber;
+            inValue.Carrier = Carrier;
+            inValue.PickupType = PickupType;
+            srvStamp.ModifyCarrierPickupResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ModifyCarrierPickup(inValue);
+            PickupDate = retVal.PickupDate;
+            PickUpDayOfWeek = retVal.PickUpDayOfWeek;
+            ConfirmationNumber = retVal.ConfirmationNumber;
+            PickupStatus = retVal.PickupStatus;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.ModifyCarrierPickupResponse> ModifyCarrierPickupAsync(srvStamp.ModifyCarrierPickupRequest request)
         {
             return base.Channel.ModifyCarrierPickupAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ModifyNotificationSettingResponse> ModifyNotificationSettingAsync(svcStamp.ModifyNotificationSettingRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ModifyNotificationSettingResponse srvStamp.SwsimV135Soap.ModifyNotificationSetting(srvStamp.ModifyNotificationSettingRequest request)
+        {
+            return base.Channel.ModifyNotificationSetting(request);
+        }
+        
+        public string ModifyNotificationSetting(object Item, srvStamp.NotificationSetting NotificationSetting, bool SetAsDefault)
+        {
+            srvStamp.ModifyNotificationSettingRequest inValue = new srvStamp.ModifyNotificationSettingRequest();
+            inValue.Item = Item;
+            inValue.NotificationSetting = NotificationSetting;
+            inValue.SetAsDefault = SetAsDefault;
+            srvStamp.ModifyNotificationSettingResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ModifyNotificationSetting(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.ModifyNotificationSettingResponse> srvStamp.SwsimV135Soap.ModifyNotificationSettingAsync(srvStamp.ModifyNotificationSettingRequest request)
         {
             return base.Channel.ModifyNotificationSettingAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.PlaceOrderResponse> PlaceOrderAsync(svcStamp.PlaceOrderRequest request)
+        public System.Threading.Tasks.Task<srvStamp.ModifyNotificationSettingResponse> ModifyNotificationSettingAsync(object Item, srvStamp.NotificationSetting NotificationSetting, bool SetAsDefault)
+        {
+            srvStamp.ModifyNotificationSettingRequest inValue = new srvStamp.ModifyNotificationSettingRequest();
+            inValue.Item = Item;
+            inValue.NotificationSetting = NotificationSetting;
+            inValue.SetAsDefault = SetAsDefault;
+            return ((srvStamp.SwsimV135Soap)(this)).ModifyNotificationSettingAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.PlaceOrderResponse srvStamp.SwsimV135Soap.PlaceOrder(srvStamp.PlaceOrderRequest request)
+        {
+            return base.Channel.PlaceOrder(request);
+        }
+        
+        public string PlaceOrder(object Item, srvStamp.Sku[] Skus, string PromoCode, srvStamp.Address ShippingAddress, srvStamp.StoreShippingMethodType StoreShippingMethod, out string StoreOrderId, out decimal StoreOrderTotal)
+        {
+            srvStamp.PlaceOrderRequest inValue = new srvStamp.PlaceOrderRequest();
+            inValue.Item = Item;
+            inValue.Skus = Skus;
+            inValue.PromoCode = PromoCode;
+            inValue.ShippingAddress = ShippingAddress;
+            inValue.StoreShippingMethod = StoreShippingMethod;
+            srvStamp.PlaceOrderResponse retVal = ((srvStamp.SwsimV135Soap)(this)).PlaceOrder(inValue);
+            StoreOrderId = retVal.StoreOrderId;
+            StoreOrderTotal = retVal.StoreOrderTotal;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.PlaceOrderResponse> PlaceOrderAsync(srvStamp.PlaceOrderRequest request)
         {
             return base.Channel.PlaceOrderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.PriceOrderResponse> PriceOrderAsync(svcStamp.PriceOrderRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.PriceOrderResponse srvStamp.SwsimV135Soap.PriceOrder(srvStamp.PriceOrderRequest request)
+        {
+            return base.Channel.PriceOrder(request);
+        }
+        
+        public string PriceOrder(object Item, srvStamp.Sku[] Skus, string PromoCode, srvStamp.Address ShippingAddress, out srvStamp.StoreShippingMethodOption[] StoreShippingMethodOptions)
+        {
+            srvStamp.PriceOrderRequest inValue = new srvStamp.PriceOrderRequest();
+            inValue.Item = Item;
+            inValue.Skus = Skus;
+            inValue.PromoCode = PromoCode;
+            inValue.ShippingAddress = ShippingAddress;
+            srvStamp.PriceOrderResponse retVal = ((srvStamp.SwsimV135Soap)(this)).PriceOrder(inValue);
+            StoreShippingMethodOptions = retVal.StoreShippingMethodOptions;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.PriceOrderResponse> PriceOrderAsync(srvStamp.PriceOrderRequest request)
         {
             return base.Channel.PriceOrderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.PurchasePostageResponse> PurchasePostageAsync(svcStamp.PurchasePostageRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.PurchasePostageResponse srvStamp.SwsimV135Soap.PurchasePostage(srvStamp.PurchasePostageRequest request)
+        {
+            return base.Channel.PurchasePostage(request);
+        }
+        
+        public string PurchasePostage(object Item, decimal PurchaseAmount, decimal ControlTotal, srvStamp.MachineInfo MI, string IntegratorTxID, System.Nullable<bool> SendEmail, out srvStamp.PurchaseStatus PurchaseStatus, out int TransactionID, out srvStamp.PostageBalance PostageBalance, out string RejectionReason, out bool MIRequired, out string ProcessorTransactionID)
+        {
+            srvStamp.PurchasePostageRequest inValue = new srvStamp.PurchasePostageRequest();
+            inValue.Item = Item;
+            inValue.PurchaseAmount = PurchaseAmount;
+            inValue.ControlTotal = ControlTotal;
+            inValue.MI = MI;
+            inValue.IntegratorTxID = IntegratorTxID;
+            inValue.SendEmail = SendEmail;
+            srvStamp.PurchasePostageResponse retVal = ((srvStamp.SwsimV135Soap)(this)).PurchasePostage(inValue);
+            PurchaseStatus = retVal.PurchaseStatus;
+            TransactionID = retVal.TransactionID;
+            PostageBalance = retVal.PostageBalance;
+            RejectionReason = retVal.RejectionReason;
+            MIRequired = retVal.MIRequired;
+            ProcessorTransactionID = retVal.ProcessorTransactionID;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.PurchasePostageResponse> PurchasePostageAsync(srvStamp.PurchasePostageRequest request)
         {
             return base.Channel.PurchasePostageAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.RecoverUsernameResponse> RecoverUsernameAsync(svcStamp.RecoverUsernameRequest request)
+        public void RecoverUsername(string EmailAddress, string Reserved)
         {
-            return base.Channel.RecoverUsernameAsync(request);
+            base.Channel.RecoverUsername(EmailAddress, Reserved);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.RegisterShippingProviderAccountResponse> RegisterShippingProviderAccountAsync(svcStamp.RegisterShippingProviderAccountRequest1 request)
+        public System.Threading.Tasks.Task RecoverUsernameAsync(string EmailAddress, string Reserved)
         {
-            return base.Channel.RegisterShippingProviderAccountAsync(request);
+            return base.Channel.RecoverUsernameAsync(EmailAddress, Reserved);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ReprintIndiciumResponse1> ReprintIndiciumAsync(svcStamp.ReprintIndiciumRequest1 request)
+        public string RegisterShippingProviderAccount(srvStamp.RegisterShippingProviderAccountRequest registerShippingProviderAccountRequest)
         {
-            return base.Channel.ReprintIndiciumAsync(request);
+            return base.Channel.RegisterShippingProviderAccount(registerShippingProviderAccountRequest);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ResubmitPurchaseResponse> ResubmitPurchaseAsync(svcStamp.ResubmitPurchaseRequest request)
+        public System.Threading.Tasks.Task<string> RegisterShippingProviderAccountAsync(srvStamp.RegisterShippingProviderAccountRequest registerShippingProviderAccountRequest)
+        {
+            return base.Channel.RegisterShippingProviderAccountAsync(registerShippingProviderAccountRequest);
+        }
+        
+        public srvStamp.ReprintIndiciumResponse ReprintIndicium(srvStamp.ReprintIndiciumRequest indiciumRequest)
+        {
+            return base.Channel.ReprintIndicium(indiciumRequest);
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.ReprintIndiciumResponse> ReprintIndiciumAsync(srvStamp.ReprintIndiciumRequest indiciumRequest)
+        {
+            return base.Channel.ReprintIndiciumAsync(indiciumRequest);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ResubmitPurchaseResponse srvStamp.SwsimV135Soap.ResubmitPurchase(srvStamp.ResubmitPurchaseRequest request)
+        {
+            return base.Channel.ResubmitPurchase(request);
+        }
+        
+        public string ResubmitPurchase(object Item, string ResubmitCookie, out int TransactionID, out decimal ChargedAmount, out decimal PendingAmount, out int WaitIntervalSeconds, out srvStamp.PurchaseStatus PurchaseStatus, out string RejectionReason)
+        {
+            srvStamp.ResubmitPurchaseRequest inValue = new srvStamp.ResubmitPurchaseRequest();
+            inValue.Item = Item;
+            inValue.ResubmitCookie = ResubmitCookie;
+            srvStamp.ResubmitPurchaseResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ResubmitPurchase(inValue);
+            TransactionID = retVal.TransactionID;
+            ChargedAmount = retVal.ChargedAmount;
+            PendingAmount = retVal.PendingAmount;
+            WaitIntervalSeconds = retVal.WaitIntervalSeconds;
+            PurchaseStatus = retVal.PurchaseStatus;
+            RejectionReason = retVal.RejectionReason;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.ResubmitPurchaseResponse> ResubmitPurchaseAsync(srvStamp.ResubmitPurchaseRequest request)
         {
             return base.Channel.ResubmitPurchaseAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.ScheduleCarrierPickupResponse> ScheduleCarrierPickupAsync(svcStamp.ScheduleCarrierPickupRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.ScheduleCarrierPickupResponse srvStamp.SwsimV135Soap.ScheduleCarrierPickup(srvStamp.ScheduleCarrierPickupRequest request)
+        {
+            return base.Channel.ScheduleCarrierPickup(request);
+        }
+        
+        public string ScheduleCarrierPickup(object Item, srvStamp.CarrierPickupContactInformationV2 ContactInformation, srvStamp.CarrierPickupAddressV3 Address, srvStamp.CarrierPickupPackageInformation PackageInformation, srvStamp.Carrier Carrier, ref string PickupTimeEarliest, ref string PickupTimeLatest, srvStamp.CarrierPickupType PickupType, out string PickupDate, out string PickUpDayOfWeek, out string ConfirmationNumber, out decimal EstimatedAmount)
+        {
+            srvStamp.ScheduleCarrierPickupRequest inValue = new srvStamp.ScheduleCarrierPickupRequest();
+            inValue.Item = Item;
+            inValue.ContactInformation = ContactInformation;
+            inValue.Address = Address;
+            inValue.PackageInformation = PackageInformation;
+            inValue.Carrier = Carrier;
+            inValue.PickupTimeEarliest = PickupTimeEarliest;
+            inValue.PickupTimeLatest = PickupTimeLatest;
+            inValue.PickupType = PickupType;
+            srvStamp.ScheduleCarrierPickupResponse retVal = ((srvStamp.SwsimV135Soap)(this)).ScheduleCarrierPickup(inValue);
+            PickupDate = retVal.PickupDate;
+            PickUpDayOfWeek = retVal.PickUpDayOfWeek;
+            ConfirmationNumber = retVal.ConfirmationNumber;
+            PickupTimeEarliest = retVal.PickupTimeEarliest;
+            PickupTimeLatest = retVal.PickupTimeLatest;
+            EstimatedAmount = retVal.EstimatedAmount;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.ScheduleCarrierPickupResponse> ScheduleCarrierPickupAsync(srvStamp.ScheduleCarrierPickupRequest request)
         {
             return base.Channel.ScheduleCarrierPickupAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.SetAutoBuyResponse> SetAutoBuyAsync(svcStamp.SetAutoBuyRequest request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.SetAutoBuyResponse srvStamp.SwsimV135Soap.SetAutoBuy(srvStamp.SetAutoBuyRequest request)
+        {
+            return base.Channel.SetAutoBuy(request);
+        }
+        
+        public string SetAutoBuy(object Item, srvStamp.AutoBuySettings AutoBuySettings)
+        {
+            srvStamp.SetAutoBuyRequest inValue = new srvStamp.SetAutoBuyRequest();
+            inValue.Item = Item;
+            inValue.AutoBuySettings = AutoBuySettings;
+            srvStamp.SetAutoBuyResponse retVal = ((srvStamp.SwsimV135Soap)(this)).SetAutoBuy(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.SetAutoBuyResponse> srvStamp.SwsimV135Soap.SetAutoBuyAsync(srvStamp.SetAutoBuyRequest request)
         {
             return base.Channel.SetAutoBuyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.SetCodeWordsResponse> SetCodeWordsAsync(svcStamp.SetCodeWordsRequest request)
+        public System.Threading.Tasks.Task<srvStamp.SetAutoBuyResponse> SetAutoBuyAsync(object Item, srvStamp.AutoBuySettings AutoBuySettings)
+        {
+            srvStamp.SetAutoBuyRequest inValue = new srvStamp.SetAutoBuyRequest();
+            inValue.Item = Item;
+            inValue.AutoBuySettings = AutoBuySettings;
+            return ((srvStamp.SwsimV135Soap)(this)).SetAutoBuyAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.SetCodeWordsResponse srvStamp.SwsimV135Soap.SetCodeWords(srvStamp.SetCodeWordsRequest request)
+        {
+            return base.Channel.SetCodeWords(request);
+        }
+        
+        public string SetCodeWords(object Item, srvStamp.CodewordType Codeword1Type, string Codeword1, srvStamp.CodewordType Codeword2Type, string Codeword2)
+        {
+            srvStamp.SetCodeWordsRequest inValue = new srvStamp.SetCodeWordsRequest();
+            inValue.Item = Item;
+            inValue.Codeword1Type = Codeword1Type;
+            inValue.Codeword1 = Codeword1;
+            inValue.Codeword2Type = Codeword2Type;
+            inValue.Codeword2 = Codeword2;
+            srvStamp.SetCodeWordsResponse retVal = ((srvStamp.SwsimV135Soap)(this)).SetCodeWords(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.SetCodeWordsResponse> srvStamp.SwsimV135Soap.SetCodeWordsAsync(srvStamp.SetCodeWordsRequest request)
         {
             return base.Channel.SetCodeWordsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.StartAccountVerificationResponse> StartAccountVerificationAsync(svcStamp.StartAccountVerificationRequest request)
+        public System.Threading.Tasks.Task<srvStamp.SetCodeWordsResponse> SetCodeWordsAsync(object Item, srvStamp.CodewordType Codeword1Type, string Codeword1, srvStamp.CodewordType Codeword2Type, string Codeword2)
+        {
+            srvStamp.SetCodeWordsRequest inValue = new srvStamp.SetCodeWordsRequest();
+            inValue.Item = Item;
+            inValue.Codeword1Type = Codeword1Type;
+            inValue.Codeword1 = Codeword1;
+            inValue.Codeword2Type = Codeword2Type;
+            inValue.Codeword2 = Codeword2;
+            return ((srvStamp.SwsimV135Soap)(this)).SetCodeWordsAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.StartAccountVerificationResponse srvStamp.SwsimV135Soap.StartAccountVerification(srvStamp.StartAccountVerificationRequest request)
+        {
+            return base.Channel.StartAccountVerification(request);
+        }
+        
+        public string StartAccountVerification(object Item, string PhoneNumber, string Extension, srvStamp.PhoneVerificationOption PhoneVerificationOption)
+        {
+            srvStamp.StartAccountVerificationRequest inValue = new srvStamp.StartAccountVerificationRequest();
+            inValue.Item = Item;
+            inValue.PhoneNumber = PhoneNumber;
+            inValue.Extension = Extension;
+            inValue.PhoneVerificationOption = PhoneVerificationOption;
+            srvStamp.StartAccountVerificationResponse retVal = ((srvStamp.SwsimV135Soap)(this)).StartAccountVerification(inValue);
+            return retVal.Authenticator;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<srvStamp.StartAccountVerificationResponse> srvStamp.SwsimV135Soap.StartAccountVerificationAsync(srvStamp.StartAccountVerificationRequest request)
         {
             return base.Channel.StartAccountVerificationAsync(request);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.StartPasswordResetResponse> StartPasswordResetAsync(svcStamp.StartPasswordResetRequest request)
+        public System.Threading.Tasks.Task<srvStamp.StartAccountVerificationResponse> StartAccountVerificationAsync(object Item, string PhoneNumber, string Extension, srvStamp.PhoneVerificationOption PhoneVerificationOption)
         {
-            return base.Channel.StartPasswordResetAsync(request);
+            srvStamp.StartAccountVerificationRequest inValue = new srvStamp.StartAccountVerificationRequest();
+            inValue.Item = Item;
+            inValue.PhoneNumber = PhoneNumber;
+            inValue.Extension = Extension;
+            inValue.PhoneVerificationOption = PhoneVerificationOption;
+            return ((srvStamp.SwsimV135Soap)(this)).StartAccountVerificationAsync(inValue);
         }
         
-        public System.Threading.Tasks.Task<svcStamp.TrackShipmentResponse> TrackShipmentAsync(svcStamp.TrackShipmentRequest request)
+        public void StartPasswordReset(string Username, string Codeword1, string Codeword2, System.Guid IntegrationId)
+        {
+            base.Channel.StartPasswordReset(Username, Codeword1, Codeword2, IntegrationId);
+        }
+        
+        public System.Threading.Tasks.Task StartPasswordResetAsync(string Username, string Codeword1, string Codeword2, System.Guid IntegrationId)
+        {
+            return base.Channel.StartPasswordResetAsync(Username, Codeword1, Codeword2, IntegrationId);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        srvStamp.TrackShipmentResponse srvStamp.SwsimV135Soap.TrackShipment(srvStamp.TrackShipmentRequest request)
+        {
+            return base.Channel.TrackShipment(request);
+        }
+        
+        public string TrackShipment(object Item, object Item1, srvStamp.Carrier Carrier, out srvStamp.TrackingEvent[] TrackingEvents, out System.Nullable<System.DateTime> GuaranteedDeliveryDate, out System.Nullable<System.DateTime> ExpectedDeliveryDate, out string ServiceDescription, out string Carrier1, out srvStamp.DestinationInfo DestinationInfo)
+        {
+            srvStamp.TrackShipmentRequest inValue = new srvStamp.TrackShipmentRequest();
+            inValue.Item = Item;
+            inValue.Item1 = Item1;
+            inValue.Carrier = Carrier;
+            srvStamp.TrackShipmentResponse retVal = ((srvStamp.SwsimV135Soap)(this)).TrackShipment(inValue);
+            TrackingEvents = retVal.TrackingEvents;
+            GuaranteedDeliveryDate = retVal.GuaranteedDeliveryDate;
+            ExpectedDeliveryDate = retVal.ExpectedDeliveryDate;
+            ServiceDescription = retVal.ServiceDescription;
+            Carrier1 = retVal.Carrier;
+            DestinationInfo = retVal.DestinationInfo;
+            return retVal.Authenticator;
+        }
+        
+        public System.Threading.Tasks.Task<srvStamp.TrackShipmentResponse> TrackShipmentAsync(srvStamp.TrackShipmentRequest request)
         {
             return base.Channel.TrackShipmentAsync(request);
         }
@@ -23242,11 +24972,11 @@ namespace svcStamp
         {
             if ((endpointConfiguration == EndpointConfiguration.SwsimV135Soap))
             {
-                return new System.ServiceModel.EndpointAddress("https://swsim.stamps.com/swsim/swsimv135.asmx");
+                return new System.ServiceModel.EndpointAddress("https://swsim.testing.stamps.com/swsim/swsimv135.asmx");
             }
             if ((endpointConfiguration == EndpointConfiguration.SwsimV135Soap12))
             {
-                return new System.ServiceModel.EndpointAddress("https://swsim.stamps.com/swsim/swsimv135.asmx");
+                return new System.ServiceModel.EndpointAddress("https://swsim.testing.stamps.com/swsim/swsimv135.asmx");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }

@@ -1,25 +1,26 @@
 ﻿using MAILSYSTEM_ADDRESSVALIDATOR.ConfigurationSetup.OptionsSetup;
+using Microsoft.Extensions.Options;
 using System.Net;
-using static svcStamp.SwsimV135SoapClient;
+using static srvStamp.SwsimV135SoapClient;
 
 namespace MAILSYSTEM_ADDRESSVALIDATOR.Services;
 
-public class StampsServiceProvider
+public class StampsServiceProvider : IStampsServiceProvider
 {
-    private readonly svcStamp.SwsimV135SoapClient srvcSDC = new svcStamp.SwsimV135SoapClient(EndpointConfiguration.SwsimV135Soap);
+    private readonly srvStamp.SwsimV135SoapClient srvcSDC = new srvStamp.SwsimV135SoapClient(EndpointConfiguration.SwsimV135Soap);
 
     private readonly StampsOption _stampsOptions;
 
 
-    public StampsServiceProvider(StampsOption stampsOptions)
+    public StampsServiceProvider(IOptions<StampsOption> stampsOptions)
     {
-        _stampsOptions = stampsOptions;
+        _stampsOptions = stampsOptions.Value;
     }
 
     /// <summary>
     /// SdcKey from Configuration file.
     /// </summary>
-    public string SdcKey { get; set; }
+    public string SdcKey { get; set; } = string.Empty;
 
     /// <summary>
     /// Clens Address - Address Validation.
@@ -27,11 +28,12 @@ public class StampsServiceProvider
     /// <param name="ad"></param>
     /// <param name="hasMatch"></param>
     /// <returns></returns>
-    public async Task<CleanseAddressResults> ClensAddress(svcStamp.Address ad, string FromZip)
+    public srvStamp.Address ClensAddress(srvStamp.Address ad, out bool hasMatch)
     {
         SdcKey = _stampsOptions.SdcKey;
-        var hasMatch = false;
-        var rtn = new svcStamp.Address()
+
+        hasMatch = false;
+        var rtn = new srvStamp.Address()
         {
             Address1 = ad.Address1,
             Address2 = ad.Address2,
@@ -44,7 +46,7 @@ public class StampsServiceProvider
         };
         try
         {
-            var cred = new svcStamp.Credentials
+            var cred = new srvStamp.Credentials
             {
                 IntegrationID = Guid.Parse(SdcKey),
                 Username = _stampsOptions.StampsUN,
@@ -54,15 +56,16 @@ public class StampsServiceProvider
             //cred.Password = "postage1";//FloridaSun8*
             bool addressmtch1;
             bool cityzipok1;
-            svcStamp.ResidentialDeliveryIndicatorType restype1;
-            svcStamp.RateV46[] rates1;
-            svcStamp.RateV46[] rates2;
+            srvStamp.ResidentialDeliveryIndicatorType restype1;
+            srvStamp.RateV46[] rates1;
+            srvStamp.RateV46[] rates2;
             bool? ispobox1;
 
-            svcStamp.Address[] retaddresses;
-            svcStamp.StatusCodes statcodes;
+            srvStamp.Address[] retaddresses;
+            srvStamp.StatusCodes statcodes;
+            var newsdcKey = "";
             var AdClensRest = "";
-            var verifLevel = new svcStamp.AddressVerificationLevel();
+            var verifLevel = new srvStamp.AddressVerificationLevel();
             if (ad.ZIPCode.Length > 5)
             {
                 ad.ZIPCode = ad.ZIPCode.Substring(0, 5);
@@ -72,38 +75,29 @@ public class StampsServiceProvider
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls
                                              | SecurityProtocolType.Tls11
                                              | SecurityProtocolType.Tls12;
-            var cleanseResponse = await srvcSDC.CleanseAddressAsync(new svcStamp.CleanseAddressRequest
-            {
-                Item = cred,
-                Address = ad,
-                FromZIPCode = FromZip
-            });
-            //newsdcKey = await srvcSDC.CleanseAddressAsync(new svcStamp.CleanseAddressRequest
-            //{
-
-            //}
-            //                    cred,
-            //                    ref ad,
-            //                    string.Empty,//ad.ZIPCode,
-            //                    out addressmtch1,
-            //                    out cityzipok1,
-            //                    out restype1,
-            //                    out ispobox1,
-            //                    out retaddresses,
-            //                    out statcodes,
-            //                    out rates1,
-            //                    out AdClensRest,
-            //                    out verifLevel);
-            if (cleanseResponse.AddressMatch)
+            newsdcKey = srvcSDC.CleanseAddress(
+                                cred,
+                                ref ad,
+                                string.Empty,//ad.ZIPCode,
+                                out addressmtch1,
+                                out cityzipok1,
+                                out restype1,
+                                out ispobox1,
+                                out retaddresses,
+                                out statcodes,
+                                out rates1,
+                                out AdClensRest,
+                                out verifLevel);
+            if (addressmtch1)
             {
                 hasMatch = true;
                 rtn = ad;
             }
             else
             {
-                if (cleanseResponse.CandidateAddresses?.Length > 0)
+                if (retaddresses?.Length > 0)
                 {
-                    rtn = cleanseResponse.CandidateAddresses[0];
+                    rtn = retaddresses[0];
                     hasMatch = true;
                 }
             }
@@ -111,16 +105,12 @@ public class StampsServiceProvider
         catch (Exception ex)
         { }
 
-        return new CleanseAddressResults
-        {
-            FinalAddress = rtn,
-            HasMatch = hasMatch
-        };
+        return rtn;
     }
 
-    public sealed class CleanseAddressResults
+    public class CleanseAddressResults
     {
-        public svcStamp.Address? FinalAddress { get; set; }
+        public srvStamp.Address? FinalAddress { get; set; }
 
         public bool HasMatch { get; set; }
     }
