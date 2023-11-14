@@ -52,7 +52,7 @@ public class ValidateAddressBackgroundJob : IJob
 
             foreach (var details in jobDetails)
             {
-                var wasProccesed = ProcessSingleJob(job, details);
+                var wasProccesed = ProcessSingleJob(details);
 
                 if (wasProccesed)
                     jobDetailsCount--;
@@ -81,7 +81,7 @@ public class ValidateAddressBackgroundJob : IJob
     /// </summary>
     /// <param name="job"></param>
     /// <param name="details"></param>
-    private bool ProcessSingleJob(MailJob job, MailJobDetail details)
+    private bool ProcessSingleJob(MailJobDetail details)
     {
         var wasProcessed = true;
         var address = new Address

@@ -58,7 +58,6 @@ public class StampsServiceProvider : IStampsServiceProvider
             bool cityzipok1;
             srvStamp.ResidentialDeliveryIndicatorType restype1;
             srvStamp.RateV46[] rates1;
-            srvStamp.RateV46[] rates2;
             bool? ispobox1;
 
             srvStamp.Address[] retaddresses;
